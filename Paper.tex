@@ -1,0 +1,125 @@
+\documentclass[UTF8,a4paper,12pt,twoside]{article}  
+
+% =======================================
+%  --------------- 导言部分 ------------
+% =======================================
+
+% ===============================
+%  -------- 加载基础宏包 --------
+% ===============================
+
+\usepackage{ctex} 
+\usepackage{subfiles}
+\usepackage{amsmath, amssymb, amsfonts, array, mathrsfs} % <-- 数学宏包, 数学样式
+\usepackage{latexsym} % <-- 符号
+\usepackage{graphicx} % <-- 颜色和图形, 增强图形支持，文本旋转和缩放
+\usepackage{subfigure} % <-- 插入并列子图
+\usepackage{xcolor} % <-- 颜色
+\usepackage{textcomp} % <-- 特殊字符
+\usepackage{float} % <-- 浮动
+\usepackage{longtable} % <-- 长表格
+\usepackage{multicol, multirow} % <-- 多列, 多行, 分栏
+\usepackage{lipsum} % <-- 随机文本
+\usepackage{setspace} % <-- 行距
+\setlength{\parindent}{0pt} % <-- 段前取消空格
+\usepackage{pifont} % <-- 特殊符号
+\usepackage{times}\usepackage{mathptmx} % <-- Times New Roman 字体
+\usepackage{mathpazo} % <-- mathpazo 字体
+
+\usepackage{esint} % <-- 积分符号
+\newcommand{\erint}{ \varoiint } % 二重曲面积分
+\newcommand{\ferint}{ \displaystyle\varoiint } % 强制性二重曲面积分
+
+\usepackage{appendix} % <-- 附录
+\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}} % <-- 引用参考文献
+
+% ===============================
+%  ----- 代码高亮取消注释 -----
+% ===============================
+% \usepackage{minted} % <-- 代码高亮
+% \renewcommand{\theFancyVerbLine}{\sffamily
+% \textcolor[rgb]{0.5,0.5,1.0}{\scriptsize
+% \oldstylenums{\arabic{FancyVerbLine}}}}
+
+% ===============================
+%  ------- 重定义一些名称 -------
+% ===============================
+\renewcommand\contentsname{Contents} % <-- 重定义目录名称
+\renewcommand\listfigurename{插图目录} % <-- 重定义插图目录名称
+\renewcommand\listtablename{表格目录} % <-- 重定义表格目录名称
+\renewcommand\refname{References} % <-- 重定义参考文献名称
+\renewcommand\indexname{Index} % <-- 重定义索引名称
+\renewcommand\figurename{\rm Figure} % <-- 重定义图片名称
+\renewcommand\tablename{Table} % <-- 重定义表格名称
+\renewcommand\abstractname{Abstract} % <-- 重定义摘要名称
+
+% ===============================
+%  ----- 以下设置链接样式 -----
+% ===============================
+\usepackage[colorlinks, linkcolor=black, anchorcolor=blue, citecolor=red]{hyperref}
+
+% ===============================
+%  ----- 以下设置图片路径 -----
+% ===============================
+\graphicspath{{Figures/}}
+
+% ===============================
+%  ----- 以下设置页面边距 -----
+% ===============================
+\usepackage[top=3cm, bottom=2.5cm, left=3cm, right=3cm]{geometry}
+
+% ===============================
+%  ----- 以下设置页眉页脚 -----
+% ===============================
+\usepackage{fancyhdr}
+\usepackage{lastpage} % <-- 获取总页数
+\pagestyle{fancy} 
+\fancyhead[R]{ \bfseries Team 674 } % <-- 右页眉 
+%\fancyhead[L]{ \bfseries \leftmark } % <-- 左页眉, 显示对应章标题 
+\fancyhead[C]{ \bfseries } 
+%\fancyfoot[C]{ 金属结构材料大作业 } % <-- 中页脚, 当前页  of 总页数
+%\fancyfoot[R]{  } % <-- 右页脚
+%\fancyfoot[L]{  } % <-- 左页脚
+\renewcommand{\headrulewidth}{0.4pt} % <-- 上方装饰横线
+\renewcommand{\footrulewidth}{0.4pt} % <-- 下方装饰横线
+\renewcommand{\footruleskip}{5pt} 
+
+% ========================================
+%  --------------- 正文部分 ------------
+% ========================================
+\begin{document} 
+
+% --------------------------------- 标题页 -----------------------------------
+\begin{titlepage}
+	\vspace*{20mm}
+	\begin{center}
+		{\zihao{1} Title } \\[10mm]
+		{\zihao{3} Team 674 } \\[5mm] % \uline{\hfill \kaishu\makebox[70mm]{ ... } \hfill} \\[25mm] % 填写
+		{\zihao{3} Problem A } \\[6mm] % \uline{\hfill \kaishu\makebox[70mm]{ 146041B } \hfill} \\[25mm] % 填写
+		{\bfseries \zihao{3} Abstract } \\[3mm]
+	\end{center}
+	\lipsum[1]
+\end{titlepage}
+
+% ---------------------------------- 目录 ------------------------------------
+\tableofcontents % <-- 目录
+
+% ---------------------------------- 正文 ------------------------------------
+\newpage
+\begin{spacing}{1.5} % <-- 行距
+\subfile{Body/sec1.tex}
+\subfile{Body/sec2.tex}
+\subfile{Body/sec3.tex}
+\subfile{Body/sec4.tex}
+\subfile{Body/sec5.tex}
+
+% -------------------------------- 参考文献 -----------------------------------
+\newpage
+\subfile{Body/reference.tex}
+
+% -------------------------------- 附录（代码） -----------------------------------
+\newpage
+%\subfile{Body/appendix.tex}
+
+\end{spacing}
+\end{document}
