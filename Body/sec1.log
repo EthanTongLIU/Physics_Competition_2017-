@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.16)  11 NOV 2017 10:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.16)  12 NOV 2017 02:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1183,71 +1183,10 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             ! on input line 3.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <15.05624> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 4.
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 6.
-(d:/texlive/2017/texmf-dist/tex/latex/psnfss/omlzplm.fd
-File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
-)
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 6.
-
-(d:/texlive/2017/texmf-dist/tex/latex/psnfss/omszplm.fd
-File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
-)
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 6.
-
-(d:/texlive/2017/texmf-dist/tex/latex/psnfss/omxzplm.fd
-File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
-)
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.98209pt on input line 6.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 6.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 6.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.98209pt on input line 6.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 6.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 6.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 6.
-
-(d:/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 6.
-
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 6.
-(d:/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.53937> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 6.
-
-(d:/texlive/2017/texmf-dist/tex/latex/psnfss/ot1zplm.fd
-File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-)
-LaTeX Font Info:    Try loading font information for U+esint on input line 6.
-
-(d:/texlive/2017/texmf-dist/tex/latex/esint/uesint.fd
-File: uesint.fd 
-)
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 6.
-
-
-LaTeX Warning: Citation `1' on page 1 undefined on input line 6.
-
 
 AED: lastpage setting LastPage
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.53937> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 9.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 19.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.64723pt.
@@ -1260,35 +1199,27 @@ nd DVIPDFMx (CTEX)
 ) [1
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 9.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 9.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 19.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 19.
 
 (./sec1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 9.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 9.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 19.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 19.
 Package rerunfilecheck Info: File `sec1.out' has not changed.
 (rerunfilecheck)             Checksum: 9814C2D956916ADB9290ECA4E25C967A;103.
-
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.41063pt have occurred.
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 22163 strings out of 492995
- 368685 string characters out of 6136402
- 636453 words of memory out of 5000000
- 25385 multiletter control sequences out of 15000+600000
- 21637 words of font info for 66 fonts, out of 8000000 for 9000
+ 22011 strings out of 492995
+ 366297 string characters out of 6136402
+ 637453 words of memory out of 5000000
+ 25274 multiletter control sequences out of 15000+600000
+ 9291 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,11n,47p,10457b,352s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,11n,47p,10457b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}<d:/texlive/2017/texm
 f-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/texlive/2017/texmf-dist/fonts/ty
 pe1/urw/palatino/uplr8a.pfb>
-Output written on sec1.pdf (1 page, 26772 bytes).
+Output written on sec1.pdf (1 page, 31488 bytes).
 PDF statistics:
  27 PDF objects out of 1000 (max. 8388607)
  21 compressed objects within 1 object stream
