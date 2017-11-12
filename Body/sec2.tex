@@ -9,21 +9,9 @@
 \renewcommand\theequation{\oldstylenums{\thesection}%
                     .\oldstylenums{\arabic{equation}}}
 
-
 \begin{document}
-\section{Assumption and Theory}
 
-\subsection{Hypothesis}
-
-First of all, we propose the following three hypotheses, and all the following calculations and derivations are based on these three hypotheses:
-
-(1)~The energy emitted by Sun during unit time is constant. 
-
-(2)~The radiant energy absorbed by Mercury, Venus, and Earth is negligible;.
-
-(3)~Only considered in the solar system. 
-
-\subsection{List of Constants}
+\section{List of Symbols}
 
 \renewcommand\arraystretch{1.5} % <-- 设置表格行高
 \begin{table}[H]
@@ -58,14 +46,55 @@ $T_M$ & The period of revolution of Mars/s & $5.93568\times10^{7}$~(687days)\\
 $\omega_E$ & The angular velocity of revolution of earth/rad$\cdot s^{-1}$ & $1.9924\times10^{-7}$ \\
 
 $\omega_M$ & The angular velocity of revolution of Mars/rad$\cdot s^{-1}$ & $1.0585\times10^{-7}$ \\
+
+$\alpha$ & The attitude angle of solar sail & $-\dfrac{\pi}{2}\leq\alpha\leq\dfrac{\pi}{2}$ \\
+
+$A$ & The area of solar sail &  \\
 	    \hline
 \end{tabular}
 
-\caption{List of Constants}
+\caption{List of symbols}
 \label{Table1}
 \end{table}  
 
-\subsection{Light pressure received by solar sail}
+\section{Assumption and Theory}
+
+\subsection{Method}
+
+We can analyse the force state of a solar sail spacecraft as usual to get its kinematical equation, and then the trajectory under the influence of spacecraft in the solar photovoltaic can be solved with several differential equations. Then we design some programs with the aid of the software Matlab in order to find out the optimal solution which satisfies the constraints linearly by iterative method. And then we can make many analysis on the parameters that affect the orbit.
+
+\subsection{Basic model of the solar sail}
+
+In this paper, the rigid body hypothesis is used in the modeling of attitude dynamics of solar sail spacecraft (Fighre 1). The solar sail surface is a square geometry, with one control blades at each end of the four support rods. The payload is connected with the surface center of solar sail through a control rod with universal joint.
+
+The simplified solar sail configuration is shown in Figure 2. The simplified configuration regards the solar sail surface as a square plane with an area A, and the center of mass coincides with its geometric center, which is located at the position of the gimbal. The attitude angle $\alpha$ of the solar sail is defined as the angle between the normal direction of the sail and the radial direction of the Sun, with a value of $-\dfrac{\pi}{2}\leq\alpha\leq\dfrac{\pi}{2}$. 
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.2]{../Figures/solarsailmodel.jpg}
+ \caption{Solar sail}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{../Figures/imagesolarsail.jpg}
+\caption{Basic model of the solar sail}
+\label{fig1}
+\end{figure}
+    
+\subsection{Force of light pressure}
+
+\subsubsection{Assumptions}
+
+The following calculation of the force of light pressure is based on these three hypotheses:
+
+(1)~The energy emitted by Sun during unit time is constant. 
+
+(2)~The radiant energy absorbed by Mercury, Venus, and Earth is negligible;.
+
+(3)~Only considered in the solar system.
+
+\subsubsection{Calculation}
 
 The solar constant (S.) refers to the solar radiation energy that received per second by per unit area of the top of the atmosphere circle perpendicular to the sunlight at the average distance from Sun to Earth ($D=1.496\times10^8km$). Similarly we denote S(r) as the energy flow density at the distance r from the Sun, and we denote $A$ as the area of solar sail.
 \\
@@ -90,7 +119,6 @@ P(r)=2\rho_E=\dfrac{2S(r)}{c}=\dfrac{2S.{R_E}^2}{cr^2}
 
 The ideal plane solar sail model assumed that the impact of solar photon on the sail surface can be regarded as an ideal reflection, and the sail surface is an ideal plane. Therefore, the forces exert by incident photons and reflected photons are equal, shown as follows:
 
-%-------------------这里插入射反射光的路径图---------------------%
 \begin{figure}[H]
  \centering
  \includegraphics[scale=0.3]{../Figures/lightpressure.pdf}
@@ -120,7 +148,19 @@ The effective area refers to the area on which the sail is projected on the plan
 
 Therefore, the force of light pressure $F_p$ is always along the normal direction of solar sail surface, $\vec{f}=\vec{n}$, $\vec{f}$ is the unit vector of thrust, it is always in the direction along the pressure direction and deviates from the sun.
 
-\subsection{Force analysis and acceleration}
+\subsection{Analysis of the gravitation}
+
+We calculated the gravitation from the Sun, Earth, Mars when the spacecraft has not escaped the Earth and has not entered the orbit of Mars. It can be seen accorfing to the order of magnitude in figures bellow that during the process of flight, the gravitation exerted by the Earth and Mars both can be negligible in comparing to the Sun's gravity. Thus we can get a simplified model. 
+
+%------------------太阳地球火星对航天器的引力关于r的变化相对大小 图----------------------%
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.3]{../Figures/1.pdf}
+ \caption{...}
+\end{figure}
+
+\subsection{Force analysis and expression of acceleration}
 
 In this problem, the solar sail is mainly affected by the gravity of Sun and the pressure of sunlight, because the magnitude of solar sail due to the gravitational action of Mercury, Venus and Earth is very small which can be neglected in comparing to the relative solar gravitation.
 
@@ -131,19 +171,19 @@ Light pressure is always deviated from the sun, by controling the attitude of so
 \begin{figure}[H]
  \begin{minipage}[t]{0.5\linewidth}
  \centering{}
- \includegraphics[width=2.2in]{accelerate.pdf}
- \caption{spiralling inward($F_P\cdot\alpha>0$)}
+ \includegraphics[scale=0.25]{../Figures/accelerate.pdf}
+ \caption{spiraling outward($F_P\cdot\alpha>0$)}
  \label{fig:side:a}
  \end{minipage}
  \begin{minipage}[t]{0.5\linewidth}
  \centering{}
- \includegraphics[width=2.2in]{../Figures/decrease.pdf}
- \caption{spiralling outward($F_P\cdot\alpha<0$)}
+ \includegraphics[scale=0.25]{../Figures/decrease.pdf}
+ \caption{spiraling inward($F_P\cdot\alpha<0$)}
  \label{fig:side:b}
  \end{minipage}
 \end{figure}
 
-Denoted $F_g$ as the gravity of Sun received by solar sail and $F_g=G\dfrac{M_Sm}{r^2}$.
+Denoted $F_g$ as the gravity of Sun received by solar sail and $\vec{F_g}=G\dfrac{M_Sm}{r^2}\vec{u_r}$.
 
 According to the Newton Second Law:
 
@@ -151,7 +191,7 @@ According to the Newton Second Law:
 \vec{F_g}+\vec{F_p}=m\vec{a}
 \end{equation}
 
-projected to the radial direction:
+projected to the radial direction $\vec{u_r}$:
 
 \begin{equation}
 G\dfrac{M_Sm}{r^2}+\dfrac{2S.{R_E}^2Acos^2\alpha}{cr^2}\cdot cos\alpha=ma
@@ -160,58 +200,96 @@ G\dfrac{M_Sm}{r^2}+\dfrac{2S.{R_E}^2Acos^2\alpha}{cr^2}\cdot cos\alpha=ma
 so we obtain the normal acceleration as:
 
 \begin{equation}
-a=\dfrac{GM_S}{r^2}+\dfrac{2S.{R_E}^2Acos^3\alpha}{mcr^2}
+\vec{a}=\left(\dfrac{GM_S}{r^2}+\dfrac{2S.{R_E}^2Acos^3\alpha}{mcr^2}\right)\vec{n}
 \end{equation}
 
-Numerical application:
+\subsection{Kinematical equation}
+
+With the equation (2.6) when we suppose the surface of the solar sail is A, the attitude angle is $\alpha$ ( the attitude angle is defined by the included angle between the vector $\vec{n}$ and the vector $\vec{u_r}$ which have presented in the Figure.3) 
 
 \begin{equation}
-a=\dfrac{13.27\times10^{19}}{r^2}+\dfrac{1.02\times10^{14}Acos^3\alpha}{r^2}
+\vec{F_p} = P(r)Acos^2(\alpha)\vec{n}
 \end{equation}
 
-
-
-
-\section{Basic Model}
-\subsection{The initial state of the solar sail spacecraft}
-First, considering the solar sail spacecraft will be launched from earth to Mars, and it needs to use the rocket to accelerate the spacecraft to earth's escape velocity. The best and most fuel-efficient situation here is that the energy that solar sails spacecraft is given by the rocket is just enough to get the spacecraft out of the earth's gravitational field, so, we are treating the speed of the solar sail with the speed of the earth's revolution speed  and direction.
-
-\subsection{Theory}
-
-\subsubsection{Assumptions of our model}
-
-\subsubsection{Method}
-
-\subsection{Model}
-\subsubsection{model0}
-
-\subsubsection{model1}
-
-\begin{equation}
-\vec{F_{flp}} = 2P(r)Acos^2(\alpha)\vec{n}
-\end{equation}
 and the gravitation from the Sun:
 \begin{equation}
-\vec{G}=-\frac{GMm}{r^2}\vec{u_r}
+\vec{F_g}=-\frac{GM_Sm}{r^2}\vec{u_r}
 \end{equation}
+
 We have the conversion relation between these vectors :
 \begin{equation}
 \vec{u_r}=cos\theta \vec{u_x} + sin\theta \vec{u_y}
 \end{equation}
+
 and
 \begin{equation} 
 \vec{u_\theta}=-sin\theta \vec{u_x} + cos\theta \vec{u_y}
 \end{equation}
+
+so the normal should be:
 \begin{align*}
 \vec{n} &= cos\alpha \vec{u_r} + sin\alpha \vec{u_\theta}\\
-	    &= cos\alpha (cos\theta \vec{u_x} + sin\theta \vec{u_y}) + sin\alpha (-sin\theta \vec{u_x} + cos\theta \vec{u_y}) \\
-	    &=(cos\alpha cos\theta - sin\alpha sin\theta )\vec{u_x} + (cos\alpha sin\theta + sin\alpha cos\theta)\vec{u_y}
-\end{align*} 
-Then we project this two force to the axe $x$ and axe $y$:
+	    &= cos\alpha (cos\theta \vec{u_x} + sin\theta \vec{u_y}) + sin\alpha (-sin\theta \vec{u_x} + cos\theta \vec{u_y})\\
+	    &=(cos\alpha cos\theta - sin\alpha sin\theta )\vec{u_x} + (cos\alpha sin\theta + sin\alpha cos\theta)\vec{u_y} 
+\end{align*}
+
+Then we project this two force to the axe x and axe y:
 \begin{equation}
-\vec{F_x} = (-\frac{GMmx}{(\sqrt{x^2+y^2})^3} + 2P(r)Acos^2\alpha(cos\alpha\frac{x}{\sqrt{x^2+y^2}} - sin\alpha\frac{y}{\sqrt{x^2+y^2}}))\vec{u_x}
+\vec{F_x} = (-\frac{GMmx}{(\sqrt{x^2+y^2})^3} + P(r)Acos^2\alpha(cos\alpha\frac{x}{\sqrt{x^2+y^2}} - sin\alpha\frac{y}{\sqrt{x^2+y^2}}))\vec{u_x}
 \end{equation}
 
+\begin{equation}
+\vec{F_y} = (-\frac{GMmy}{(\sqrt{x^2+y^2})^3} + P(r)Acos^2\alpha(cos\alpha\frac{y}{\sqrt{x^2+y^2}} + sin\alpha\frac{x}{\sqrt{x^2+y^2}}))\vec{u_y}
+\end{equation}
+\\
+
+According to the basic principle of dynamics, we can get these kinematical equation:
+
+\begin{equation}
+\frac{d^2x}{dt^2} = \frac{F_x}{m}
+\end{equation}
+\begin{equation}
+\frac{d^2y}{dt^2} = \frac{F_y}{m}
+\end{equation}
+
+After we finish the basic kinematical equation, we can use MATLAB to solve with initial conditions to get its trajectory.
+
+\subsection{Trajectory}
+
+\subsubsection{Assumption}
+
+Here, we make some simplificaition in considering the orbits: 
+%在轨道的考虑上我们做了一些简化：
+
+(1) these revolution orbits of Earth and Mars are periphery,          
+%(1) 火星地球做公转的轨道是圆周轨道；
+
+(2) these revolution plane of Earth and Mars is the same plane.   
+%(2)火星地球公转的轨道平面在同一平面。
+
+\subsubsection{The initial state of the solar sail spacecraft}
+
+First, considering that the solar sail spacecraft will be launched from Earth to Mars, and it needs to use the rocket to accelerate the spacecraft to Earth's escape velocity. The best and most fuel-efficient situation here is that the energy that solar sails spacecraft is given by the rocket is just enough to get the spacecraft out of the Earth's gravitational field, so, we are treating the speed of the solar sail with the speed of the Earth's revolution speed  and direction.
+
+Next we consider the mass of the spacecraft is 2000kg.
+
+\subsubsection{Trajectory without power}
+
+According to the initial condition, without the power and the influence of the gravitation from Earth, it is simple to understand that the trajectory of spacecraft is the revolutionary orbit.
+
+\subsubsection{Trajectory with power}
+
+In this section we have got some trajectories of the spacecraft by setting the value of surface area A of the solar sail and the attitude angle $\alpha$. We can figure out that if we want to send the solar sail to Mars or outer planet, we have to make the attitude angle positive ($\alpha > 0$),  i.e. the situation: spiraling outward. And the other situation is spiraling inward ($\alpha < 0$) which is corresponding to sending the solar sail to inner planet e.g. Mercury. We want to change the surface area A and the attitude angle $\alpha$ to make it to the revolutionary orbit of Mars. The test verifies that the spacecraft can indeeds get to the revolutionary orbit of Mars, i.e. sending the equipment to Mars by using the solar sail is absolutely viable in some conditions.
+
+%--------------需要至少两个图两个姿态角为正，一个姿态角为负----------------%
+
+%在这一部分，通过设置不同的太阳帆表面积和姿态角，得到了一些航天器的轨迹曲线，从图中可以看出从地球向火星或者说外星系发射太阳帆航天器，姿态角必须是正角，也就是在4.4部分所说的加速情况，而向内星系比如说水星，就是另外一种情况（姿态角为负数的情况）。我们想改变太阳帆表面积及姿态角让航天器能够到达火星轨道，试验的结果证明：在一定的条件下，航天器的轨迹可以到达火星轨道，也就是说，通过太阳帆将仪器设备或者其他载荷送到火星绝对是可行的。
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.3]{../Figures/1.pdf}
+ \caption{...}
+\end{figure}
 
 
 \end{document}
