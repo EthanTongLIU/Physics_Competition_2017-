@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.16)  12 NOV 2017 08:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.16)  12 NOV 2017 08:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./sec1.tex
-(./sec1.tex
+**./sec3.tex
+(./sec3.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (d:/texlive/2017/texmf-dist/tex/latex/subfiles/subfiles.cls
@@ -1001,8 +1001,8 @@ File: extended.chr 2015/04/18 4.8.4
 LaTeX Warning: Unused global option(s):
     [UTF8].
 
-(./sec1.aux)
-\openout1 = `sec1.aux'.
+(./sec3.aux)
+\openout1 = `sec3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -1138,9 +1138,9 @@ LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
 LaTeX Info: Redefining \nameref on input line 3.
 
-(./sec1.out) (./sec1.out)
+(./sec3.out) (./sec3.out)
 \@outlinefile=\write3
-\openout3 = `sec1.out'.
+\openout3 = `sec3.out'.
 
 Package hyperref Info: Option `CJKbookmarks' set `false' on input line 3.
 
@@ -1183,10 +1183,16 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             ! on input line 3.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <15.05624> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 4.
+<../Figures/1.pdf, id=8, 313.78249pt x 275.93889pt>
+File: ../Figures/1.pdf Graphic file (type pdf)
+ <use ../Figures/1.pdf>
+Package pdftex.def Info: ../Figures/1.pdf used on input line 23.
+(pdftex.def)             Requested size: 341.43306pt x 300.25374pt.
+
 
 AED: lastpage setting LastPage
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.53937> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 19.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 28.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.64723pt.
@@ -1198,31 +1204,30 @@ File: zhwindowsfonts.tex 2017/04/01 v2.4.9 Windows font map loader for pdfTeX a
 nd DVIPDFMx (CTEX)
 ) [1
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 19.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 19.
-
-(./sec1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 19.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 19.
-Package rerunfilecheck Info: File `sec1.out' has not changed.
-(rerunfilecheck)             Checksum: 9814C2D956916ADB9290ECA4E25C967A;103.
+ <../Figures/1.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
+ (./sec3.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
+Package rerunfilecheck Info: File `sec3.out' has not changed.
+(rerunfilecheck)             Checksum: A9B42050352CC239BC579AAE7AFF89B3;98.
  ) 
 Here is how much of TeX's memory you used:
- 22011 strings out of 492995
- 366297 string characters out of 6136402
- 637453 words of memory out of 5000000
- 25274 multiletter control sequences out of 15000+600000
+ 22023 strings out of 492995
+ 366452 string characters out of 6136402
+ 637476 words of memory out of 5000000
+ 25283 multiletter control sequences out of 15000+600000
  9291 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,11n,47p,10457b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}<d:/texlive/2017/texm
 f-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/texlive/2017/texmf-dist/fonts/ty
 pe1/urw/palatino/uplr8a.pfb>
-Output written on sec1.pdf (1 page, 31679 bytes).
+Output written on sec3.pdf (1 page, 45659 bytes).
 PDF statistics:
- 27 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 49 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
+ 4 named destinations out of 1000 (max. 500000)
+ 14 words of extra memory for PDF output out of 10000 (max. 10000000)
 
