@@ -15,11 +15,13 @@
 
 \subsection{Hypothesis}
 
-1)~The energy emitted by the solar during unit time is constant; 
+First of all, we propose the following three hypotheses, and all the following calculations and derivations are based on these three hypotheses:
 
-2)~The radiant energy absorbed by mercury, Venus, and Earth is negligible; 
+(1)~The energy emitted by Sun during unit time is constant. 
 
-3)~Only considered in the solar system. 
+(2)~The radiant energy absorbed by Mercury, Venus, and Earth is negligible;.
+
+(3)~Only considered in the solar system. 
 
 \subsection{List of Constants}
 
@@ -65,27 +67,31 @@ $\omega_M$ & The angular velocity of revolution of Mars/rad$\cdot s^{-1}$ & $1.0
 
 \subsection{Light pressure received by solar sail}
 
-The solar constant (S.) refers to the solar radiation energy that received per second by per unit area of the top of the atmosphere circle perpendicular to the sun light on the average distance from sun to the earth ($D=1.496\times10^8km$). Similarly we denote the energy flow density at the distance of r from the sun as S(r).
-According to the conversation of energy under three hypothesis above:
+The solar constant (S.) refers to the solar radiation energy that received per second by per unit area of the top of the atmosphere circle perpendicular to the sunlight at the average distance from Sun to Earth ($D=1.496\times10^8km$). Similarly we denote S(r) as the energy flow density at the distance r from the Sun, and we denote $A$ as the area of solar sail.
+\\
+
+According to the conversation of energy:
 
 \[S.\dfrac{4}{3}\pi{R_E}^2=S(r)\dfrac{4}{3}\pi r^2\]
 
 \begin{equation}
-S.(r)=\dfrac{S.R_E^2}{r^2}
+S(r)=\dfrac{S.R_E^2}{r^2}
 \end{equation}
-The energy density is:
+
+The energy density is:\\
 \begin{equation}
-\rho_E=\dfrac{E}{V}=\dfrac{S.(tAcos\alpha)}{c tAcos\alpha}=\dfrac{S.}{c}
+\rho_E=\dfrac{E}{V}=\dfrac{S.tAcos\alpha}{c tAcos\alpha}=\dfrac{S.}{c}
 \end{equation}
-The total light pressure is equal to twice its energy density:
+
+The total light pressure is equal to twice of its energy density:
 \begin{equation}
 P(r)=2\rho_E=\dfrac{2S(r)}{c}=\dfrac{2S.{R_E}^2}{cr^2}
 \end{equation}
 
-The ideal plane solar sail model assumes that the solar photon impacts on the sail surface as an ideal reflection, and t{}he sail surface is an ideal plane. Therefore, the forces exert by incident photons and reflected photons are equal, shown as follows:
+The ideal plane solar sail model assumed that the impact of solar photon on the sail surface can be regarded as an ideal reflection, and the sail surface is an ideal plane. Therefore, the forces exert by incident photons and reflected photons are equal, shown as follows:
 
 %-------------------这里插入射反射光的路径图---------------------%
-\begin{figure}
+\begin{figure}[H]
  \centering
  \includegraphics[scale=0.3]{../Figures/lightpressure.pdf}
  \caption{incident and reflected photon}
@@ -98,7 +104,7 @@ P_i=\frac{P(r)}{2}A_z(cos\alpha~\vec{n}-sin\alpha~\vec{t})
 \label{eq:1}
 \end{equation}
 
-In this formula, $A_z$ is the effective sail area, $\alpha$ is the angle between the incident ray and the solar sail unit normal direction $\vec{n}$, the solar sail normal $\vec{n}$ is perpendicular to the sail plane and deviates from the sun, and $\vec{t}$ is the tangent unit vector perpendicular to the normal $\vec{n}$, the anticlockwise direction is defined positive. The light pressure produced by the reflected light is as follows:
+In this formula, $A_z$ is the effective sail area, $\alpha$ is the angle between the incident ray and the solar sail unit normal direction $\vec{n}$, the unit vector of solar sail normal direction $\vec{n}$ is perpendicular to the sail plane and pointing out away from the sun. $\vec{t}$ is the tangent unit vector perpendicular to the normal $\vec{n}$, the anticlockwise direction is defined positive. Then the light pressure produced by the reflected light is as bellow:
 
 \begin{equation}
 P_r=\frac{P(r)}{2}A_z(cos\alpha~\vec{n}+sin\alpha~\vec{t})
@@ -126,13 +132,13 @@ Light pressure is always deviated from the sun, by controling the attitude of so
  \begin{minipage}[t]{0.5\linewidth}
  \centering{}
  \includegraphics[width=2.2in]{accelerate.pdf}
- \caption{spiralling intward($F_P\cdot\alpha>0$)}
- \label{fig:side:a}{}
- \end{minipage}%{}
+ \caption{spiralling inward($F_P\cdot\alpha>0$)}
+ \label{fig:side:a}
+ \end{minipage}
  \begin{minipage}[t]{0.5\linewidth}
  \centering{}
  \includegraphics[width=2.2in]{../Figures/decrease.pdf}
- \caption{spiralling outwa{}rd($F_P\cdot\alpha<0$)}
+ \caption{spiralling outward($F_P\cdot\alpha<0$)}
  \label{fig:side:b}
  \end{minipage}
 \end{figure}
@@ -162,5 +168,50 @@ Numerical application:
 \begin{equation}
 a=\dfrac{13.27\times10^{19}}{r^2}+\dfrac{1.02\times10^{14}Acos^3\alpha}{r^2}
 \end{equation}
+
+
+
+
+\section{Basic Model}
+\subsection{The initial state of the solar sail spacecraft}
+First, considering the solar sail spacecraft will be launched from earth to Mars, and it needs to use the rocket to accelerate the spacecraft to earth's escape velocity. The best and most fuel-efficient situation here is that the energy that solar sails spacecraft is given by the rocket is just enough to get the spacecraft out of the earth's gravitational field, so, we are treating the speed of the solar sail with the speed of the earth's revolution speed  and direction.
+
+\subsection{Theory}
+
+\subsubsection{Assumptions of our model}
+
+\subsubsection{Method}
+
+\subsection{Model}
+\subsubsection{model0}
+
+\subsubsection{model1}
+
+\begin{equation}
+\vec{F_{flp}} = 2P(r)Acos^2(\alpha)\vec{n}
+\end{equation}
+and the gravitation from the Sun:
+\begin{equation}
+\vec{G}=-\frac{GMm}{r^2}\vec{u_r}
+\end{equation}
+We have the conversion relation between these vectors :
+\begin{equation}
+\vec{u_r}=cos\theta \vec{u_x} + sin\theta \vec{u_y}
+\end{equation}
+and
+\begin{equation} 
+\vec{u_\theta}=-sin\theta \vec{u_x} + cos\theta \vec{u_y}
+\end{equation}
+\begin{align*}
+\vec{n} &= cos\alpha \vec{u_r} + sin\alpha \vec{u_\theta}\\
+	    &= cos\alpha (cos\theta \vec{u_x} + sin\theta \vec{u_y}) + sin\alpha (-sin\theta \vec{u_x} + cos\theta \vec{u_y}) \\
+	    &=(cos\alpha cos\theta - sin\alpha sin\theta )\vec{u_x} + (cos\alpha sin\theta + sin\alpha cos\theta)\vec{u_y}
+\end{align*} 
+Then we project this two force to the axe $x$ and axe $y$:
+\begin{equation}
+\vec{F_x} = (-\frac{GMmx}{(\sqrt{x^2+y^2})^3} + 2P(r)Acos^2\alpha(cos\alpha\frac{x}{\sqrt{x^2+y^2}} - sin\alpha\frac{y}{\sqrt{x^2+y^2}}))\vec{u_x}
+\end{equation}
+
+
 
 \end{document}
