@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.16)  13 NOV 2017 04:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.30)  13 NOV 2017 07:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1001,7 +1001,14 @@ File: extended.chr 2015/04/18 4.8.4
 LaTeX Warning: Unused global option(s):
     [UTF8].
 
-(./sec2.aux)
+(./sec2.aux
+
+LaTeX Warning: Label `fig:orbitlegend' multiply defined.
+
+
+LaTeX Warning: Label `fig:orbit1' multiply defined.
+
+)
 \openout1 = `sec2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -1351,137 +1358,179 @@ Package textcomp Warning: Oldstyle digits unavailable for family ppl.
 (textcomp)                Lining digits used instead on input line 147.
 
 [3 <../Figures/lightpressure.pdf>]
-<../Figures/1.pdf, id=106, 313.78249pt x 275.93889pt>
-File: ../Figures/1.pdf Graphic file (type pdf)
- <use ../Figures/1.pdf>
-Package pdftex.def Info: ../Figures/1.pdf used on input line 159.
-(pdftex.def)             Requested size: 94.13547pt x 82.78229pt.
 
-<../Figures/accelerate.pdf, id=107, 720.53714pt x 495.7572pt>
+pdfTeX warning: pdflatex.exe (file ../Figures/gravmars.pdf): PDF inclusion: fou
+nd PDF version <1.6>, but at most version <1.5> allowed
+<../Figures/gravmars.pdf, id=106, 177.1719pt x 171.69644pt>
+File: ../Figures/gravmars.pdf Graphic file (type pdf)
+
+<use ../Figures/gravmars.pdf>
+Package pdftex.def Info: ../Figures/gravmars.pdf used on input line 160.
+(pdftex.def)             Requested size: 199.16928pt x 193.02963pt.
+
+
+pdfTeX warning: pdflatex.exe (file ../Figures/gravsun.pdf): PDF inclusion: foun
+d PDF version <1.6>, but at most version <1.5> allowed
+<../Figures/gravsun.pdf, id=107, 188.77827pt x 184.83554pt>
+File: ../Figures/gravsun.pdf Graphic file (type pdf)
+
+<use ../Figures/gravsun.pdf>
+Package pdftex.def Info: ../Figures/gravsun.pdf used on input line 166.
+(pdftex.def)             Requested size: 199.16928pt x 195.0194pt.
+
+Overfull \hbox (2.0025pt too wide) in paragraph at lines 158--170
+[][] [] 
+ []
+
+<../Figures/accelerate.pdf, id=108, 720.53714pt x 495.7572pt>
 File: ../Figures/accelerate.pdf Graphic file (type pdf)
 
 <use ../Figures/accelerate.pdf>
-Package pdftex.def Info: ../Figures/accelerate.pdf used on input line 174.
+Package pdftex.def Info: ../Figures/accelerate.pdf used on input line 183.
 (pdftex.def)             Requested size: 180.13383pt x 123.939pt.
 
-<../Figures/decrease.pdf, id=108, 780.43523pt x 490.81418pt>
+<../Figures/decrease.pdf, id=109, 780.43523pt x 490.81418pt>
 File: ../Figures/decrease.pdf Graphic file (type pdf)
 
 <use ../Figures/decrease.pdf>
-Package pdftex.def Info: ../Figures/decrease.pdf used on input line 180.
+Package pdftex.def Info: ../Figures/decrease.pdf used on input line 189.
 (pdftex.def)             Requested size: 195.10832pt x 122.70323pt.
 
-Overfull \hbox (2.0025pt too wide) in paragraph at lines 172--184
+Overfull \hbox (2.0025pt too wide) in paragraph at lines 181--193
 [][] [] 
  []
 
 
-Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 192.
+Underfull \vbox (badness 7047) has occurred while \output is active []
 
-
-Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 192.
-
-[4 <../Figures/1.pdf> <../Figures/accelerate.pdf> <../Figures/decrease.pdf>]
+ [4 <../Figures/gravmars.pdf> <../Figures/gravsun.pdf>]
 
 Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 198.
+(textcomp)                Lining digits used instead on input line 201.
 
 
 Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 198.
+(textcomp)                Lining digits used instead on input line 201.
 
 
 Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 204.
+(textcomp)                Lining digits used instead on input line 207.
 
 
 Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 204.
+(textcomp)                Lining digits used instead on input line 207.
 
 
 Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 212.
+(textcomp)                Lining digits used instead on input line 213.
 
 
 Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 212.
+(textcomp)                Lining digits used instead on input line 213.
 
 
 Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 217.
+(textcomp)                Lining digits used instead on input line 221.
 
 
 Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 217.
+(textcomp)                Lining digits used instead on input line 221.
 
 
 Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 222.
+(textcomp)                Lining digits used instead on input line 226.
 
 
 Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 222.
+(textcomp)                Lining digits used instead on input line 226.
 
 
 Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 227.
+(textcomp)                Lining digits used instead on input line 231.
 
 
 Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 227.
+(textcomp)                Lining digits used instead on input line 231.
 
 
 Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 239.
+(textcomp)                Lining digits used instead on input line 236.
 
 
 Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 239.
+(textcomp)                Lining digits used instead on input line 236.
+
+
+Underfull \vbox (badness 1603) has occurred while \output is active []
+
+ [5 <../Figures/accelerate.pdf> <../Figures/decrease.pdf>]
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 248.
 
 
 Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 243.
+(textcomp)                Lining digits used instead on input line 248.
 
 
 Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 243.
+(textcomp)                Lining digits used instead on input line 252.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--245
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 252.
 
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 260.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 260.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 263.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 263.
+
+[6] <../Figures/label_of_7_orbits.pdf, id=302, 202.66615pt x 83.14563pt>
+File: ../Figures/label_of_7_orbits.pdf Graphic file (type pdf)
+
+<use ../Figures/label_of_7_orbits.pdf>
+Package pdftex.def Info: ../Figures/label_of_7_orbits.pdf used on input line 30
+0.
+(pdftex.def)             Requested size: 227.62204pt x 93.3876pt.
+
+<../Figures/alphadayu0.pdf, id=303, 385.00337pt x 389.60356pt>
+File: ../Figures/alphadayu0.pdf Graphic file (type pdf)
+
+<use ../Figures/alphadayu0.pdf>
+Package pdftex.def Info: ../Figures/alphadayu0.pdf used on input line 307.
+(pdftex.def)             Requested size: 199.16928pt x 201.54872pt.
+
+<../Figures/alphaxiaoyu0.pdf, id=304, 407.99928pt x 393.54529pt>
+File: ../Figures/alphaxiaoyu0.pdf Graphic file (type pdf)
+
+<use ../Figures/alphaxiaoyu0.pdf>
+Package pdftex.def Info: ../Figures/alphaxiaoyu0.pdf used on input line 313.
+(pdftex.def)             Requested size: 199.16928pt x 192.11827pt.
+
+Overfull \hbox (2.0025pt too wide) in paragraph at lines 305--317
+[][] [] 
  []
 
-[5]
 
-Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 250.
-
-
-Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 250.
-
-
-Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 253.
-
-
-Package textcomp Warning: Oldstyle digits unavailable for family ppl.
-(textcomp)                Lining digits used instead on input line 253.
-
-File: ../Figures/1.pdf Graphic file (type pdf)
-<use ../Figures/1.pdf>
-Package pdftex.def Info: ../Figures/1.pdf used on input line 290.
-(pdftex.def)             Requested size: 94.13547pt x 82.78229pt.
- [6] 
 AED: lastpage setting LastPage
-[7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 295.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 295.
+[7 <../Figures/label_of_7_orbits.pdf> <../Figures/alphadayu0.pdf> <../Figures/a
+lphaxiaoyu0.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 319.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 319.
  (./sec2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 295.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 295.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 319.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 319.
 Package rerunfilecheck Info: File `sec2.out' has not changed.
 (rerunfilecheck)             Checksum: AC77E1865475FD7921077B66B4DD9C9F;2584.
 
@@ -1489,28 +1538,36 @@ Package rerunfilecheck Info: File `sec2.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.47563pt have occurred.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 22307 strings out of 492995
- 370835 string characters out of 6136402
- 645813 words of memory out of 5000000
- 25450 multiletter control sequences out of 15000+600000
+ 22332 strings out of 492995
+ 371486 string characters out of 6136402
+ 645946 words of memory out of 5000000
+ 25468 multiletter control sequences out of 15000+600000
  35512 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,13n,47p,10477b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,13n,47p,10477b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}<d:/texlive/2017/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2017/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2017/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr10.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/mathpazo/fp
-lmri.pfb><d:/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/te
-xlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/texlive/2017/texm
-f-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/texlive/2017/texmf-dist/fonts/ty
-pe1/urw/palatino/uplri8a.pfb>
-Output written on sec2.pdf (7 pages, 303995 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/texlive/2017/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2017/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi8.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr10.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+<d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/texlive/2017/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2017/texmf-dist/fon
+ts/type1/public/mathpazo/fplmri.pfb><d:/texlive/2017/texmf-dist/fonts/type1/pub
+lic/amsfonts/symbols/msam10.pfb><d:/texlive/2017/texmf-dist/fonts/type1/urw/pal
+atino/uplb8a.pfb><d:/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pf
+b><d:/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/texlive/2
+017/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on sec2.pdf (7 pages, 756729 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
- 188 compressed objects within 2 object streams
- 48 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 396 PDF objects out of 1000 (max. 8388607)
+ 312 compressed objects within 4 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

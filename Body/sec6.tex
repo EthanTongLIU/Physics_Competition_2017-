@@ -1,0 +1,18 @@
+\documentclass[../Paper.tex]{subfiles}
+
+\begin{document}
+
+\section{Strength ang Weakness}
+\subsection{Strength of our approach}
+
+In the Matlab iterative algorithm, the control threshold of distance between Sun and the aircraft we set is very small, after a large number of cycles of linear search, we finally find the optimal solution, therefore, the optimal solution is accurate and convincing. (We can obviously see from figures that the intersection points of the two trajectories coincide very well).
+
+\subsection{Weakness of our approach}
+
+The optimization method we used was used to ignore or blur the range of processing in many details, for exampla, the gravity exerted from the Earth and Mars during the flight, and the conditions of the capture of spacecraft. Processing on these may lead to inaccurate results, but it will be improved by modifying the value of area A and $\alpha$.
+
+\section{Other Discusion}
+
+In our trajectory optimization problem, we have only two decision variables: the surface area A of solar sail and its attitude angle $\alpha$. However, the attitude angle actually can be changed at any time. So for the implementation in the Matlab program, the attitude angle $\alpha$ can be divided into several segments to consider according to the polar angle of polar coordinates or according to the running time of the solar sail spacecraft, in order to accurately solve the optimal change scheme of solar sail's attitude angle. However, because of the limited time, we didn't do further research. But anyway, we should try.
+
+\end{document}

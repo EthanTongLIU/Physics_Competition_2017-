@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{n}{clear}\PYG{p}{,}\PYG{n}{clc}\PYG{p}{,}\PYG{n}{clf}\PYG{p}{;}
+
+\PYG{n}{Border\PYGZus{}of\PYGZus{}sail} \PYG{p}{=} \PYG{l+m+mi}{100}\PYG{p}{;}
+
+\PYG{k}{for} \PYG{n+nb}{j} \PYG{p}{=} \PYG{l+m+mi}{1} \PYG{p}{:} \PYG{l+m+mi}{20}
+  \PYG{k}{for} \PYG{n}{k} \PYG{p}{=} \PYG{l+m+mi}{1} \PYG{p}{:} \PYG{l+m+mi}{40}
+      \PYG{p}{[}\PYG{n}{juge1}\PYG{p}{,}\PYG{n}{juge2}\PYG{p}{]} \PYG{p}{=} \PYG{n}{orbit}\PYG{p}{(} \PYG{n}{k} \PYG{o}{*} \PYG{l+m+mf}{0.00785} \PYG{p}{,}\PYG{n}{Border\PYGZus{}of\PYGZus{}sail}\PYGZca{}\PYG{l+m+mi}{2} \PYG{p}{)}\PYG{p}{;}
+      \PYG{k}{if} \PYG{p}{(}\PYG{n}{juge1}\PYG{o}{==}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{p}{(}\PYG{n}{juge2} \PYG{o}{==} \PYG{l+m+mi}{1}\PYG{p}{)}
+          \PYG{n+nb}{disp}\PYG{p}{(} \PYG{n+nb}{j} \PYG{p}{)}\PYG{p}{;}
+          \PYG{n+nb}{disp}\PYG{p}{(} \PYG{p}{[}\PYG{n}{num2str}\PYG{p}{(}\PYG{n}{k}\PYG{p}{)}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{Find a good point!\PYGZsq{}}\PYG{p}{]} \PYG{p}{)}\PYG{p}{;}
+      \PYG{k}{end}
+  \PYG{k}{end}
+  \PYG{n}{Border\PYGZus{}of\PYGZus{}sail} \PYG{p}{=} \PYG{n}{Border\PYGZus{}of\PYGZus{}sail} \PYG{o}{+} \PYG{l+m+mi}{20}\PYG{p}{;}
+\PYG{k}{end}
+\end{Verbatim}

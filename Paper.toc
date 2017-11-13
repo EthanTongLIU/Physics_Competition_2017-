@@ -1,5 +1,34 @@
-\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
-\contentsline {section}{\numberline {2}Assumption and Theory}{3}{section.2}
-\contentsline {section}{\numberline {3}Realization}{3}{section.3}
-\contentsline {section}{\numberline {4}Conclusion}{4}{section.4}
-\contentsline {section}{\numberline {5}Discussion of Result}{4}{section.5}
+\contentsline {section}{\numberline {1}Background}{4}{section.1}
+\contentsline {section}{\numberline {2}Introduction}{4}{section.2}
+\contentsline {section}{\numberline {3}Problem statement}{5}{section.3}
+\contentsline {section}{\numberline {4}List of Symbols}{5}{section.4}
+\contentsline {section}{\numberline {5}Assumption and Theory}{6}{section.5}
+\contentsline {subsection}{\numberline {5.1}Method}{6}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Basic model of the solar sail}{6}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Force of light pressure}{7}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Assumptions}{7}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Calculation}{7}{subsubsection.5.3.2}
+\contentsline {subsection}{\numberline {5.4}Analysis of the gravitation}{9}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Force analysis and expression of acceleration}{10}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Kinematical equation}{11}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Trajectory}{13}{subsection.5.7}
+\contentsline {subsubsection}{\numberline {5.7.1}Assumption}{13}{subsubsection.5.7.1}
+\contentsline {subsubsection}{\numberline {5.7.2}The initial state of the solar sail spacecraft}{13}{subsubsection.5.7.2}
+\contentsline {subsubsection}{\numberline {5.7.3}Trajectory without power}{13}{subsubsection.5.7.3}
+\contentsline {subsubsection}{\numberline {5.7.4}Trajectory with power}{13}{subsubsection.5.7.4}
+\contentsline {section}{\numberline {6}Trajectory Optimization Model}{14}{section.6}
+\contentsline {subsection}{\numberline {6.1}Establishment of optimal model}{14}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Description}{14}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}Conditions of Capture by Mars}{15}{subsubsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.3}Mathematical formulation}{15}{subsubsection.6.1.3}
+\contentsline {subsection}{\numberline {6.2}Realization by program}{17}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Result}{17}{subsection.6.3}
+\contentsline {section}{\numberline {7}Strength ang Weakness}{19}{section.7}
+\contentsline {subsection}{\numberline {7.1}Strength of our approach}{19}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Weakness of our approach}{20}{subsection.7.2}
+\contentsline {section}{\numberline {8}Other Discusion}{20}{section.8}
+\contentsline {section}{\numberline {A}Matlab Code with Annotation}{22}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}caozuo.m}{22}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}orbit.m}{22}{subsection.A.2}
+\contentsline {subsection}{\numberline {A.3}weifen.m}{26}{subsection.A.3}
+\contentsline {subsection}{\numberline {A.4}weifen1.m}{27}{subsection.A.4}

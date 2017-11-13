@@ -7,7 +7,7 @@
 
 \subsubsection{Description}
 
-In the previous section we have demonstrated the feasibility of launching solar sail spacecraft from earth to Mars orbit. In comparing the previous figures, we can find the attitude angle $\alpha$ and the surface of the solar sail A have certain influence on the trajectory of spacecraft. Thought understanding the differential equation \eqref{eq:diffx} \eqref{eq:diffx} the transit time t is determined by the attitude angle $\alpha$ and the surface of the solar sail A. So this section is in order to find the optimal solution, to decrease the transit time and insure the payload, to maximize the advantage of solar sails.
+In the previous section we have demonstrated the feasibility of launching solar sail spacecraft from earth to Mars orbit. In comparing the previous figures, we can find the attitude angle $\alpha$ and the surface of the solar sail A have certain influence on the trajectory of spacecraft. Thought understanding the differential equation \eqref{eq:diffx} \eqref{eq:diffy} the transit time t is determined by the attitude angle $\alpha$ and the surface of the solar sail A. So this section is in order to find the optimal solution, to decrease the transit time and insure the payload, to maximize the advantage of solar sails.
 
 \subsubsection{Conditions of Capture by Mars}
 % 分析由于火星引力捕获的作用，飞行器到达火星轨道的位置的讨论分析{}
@@ -37,7 +37,15 @@ As discussion above, we can take the below mathematical formulation of optimizat
 \item \textbf{Decision variable: $ \alpha , A $ }  
 % t(A,alpha) 满足微分方程组
 
-\item \textbf{$t(\alpha,A)$ satisfy system of differential equations \eqref{eq:diffx} \eqref{eq:diffx} }
+\item \textbf{$t(\alpha,A)$ satisfy system of differential equations \eqref{eq:diffx} \eqref{eq:diffy} }
+
+\begin{equation*}
+\vec{F_x} = (-\frac{GMmx}{(\sqrt{x^2+y^2})^3} + \dfrac{C_{1} A cos^2 \alpha}{\sqrt{x^2+y^2}} (cos\alpha\frac{x}{\sqrt{x^2+y^2}} - sin\alpha\frac{y}{\sqrt{x^2+y^2}}))\vec{u_x}
+\end{equation*}
+
+\begin{equation*}
+\vec{F_y} = (-\frac{GMmy}{(\sqrt{x^2+y^2})^3} + \dfrac{C_{1} A cos^2 \alpha}{\sqrt{x^2+y^2}} (cos\alpha\frac{y}{\sqrt{x^2+y^2}} + sin\alpha\frac{x}{\sqrt{x^2+y^2}}))\vec{u_y}
+\end{equation*}
 
 \item \textbf{Constraint conditions:}
 % 约束条件：4个初始条件 + 3个终止条件（1个用来提取其到达时间，另外两个用来判断其到达点是否满足条件），A有一个条件，alpha > 0
@@ -87,7 +95,7 @@ $$ 0 < \alpha < \dfrac{\pi}{2} $$
 
 \textbf{STEP0} : Start;\\[1mm]
 
-\textbf{STEP1} : Input kinematical differential equations \eqref{eq:diffx} \eqref{eq:diffx} and initial conditions;\\[1mm]
+\textbf{STEP1} : Input kinematical differential equations \eqref{eq:diffx} \eqref{eq:diffy} and initial conditions;\\[1mm]
 
 \textbf{STEP2} : Give the range of the surface A and the attitude angle $\alpha$;\\[1mm]
 
@@ -146,14 +154,12 @@ Next are specific trajectories of the 7 cases above.
  \begin{minipage}[t]{0.5\linewidth}
  \centering{}
  \includegraphics[width=7cm]{../Figures/label_of_7_orbits.pdf}
- % \caption{spiralling inward($F_P\cdot\alpha>0$)}
  \label{fig:orbitlegend}
  \caption{Legend of lines and points in figures below}
  \end{minipage}
  \begin{minipage}[t]{0.5\linewidth}
  \centering{}
  \includegraphics[width=7cm]{../Figures/orbit1.pdf}
- % \caption{spiralling outward($F_P\cdot\alpha<0$)}
  \label{fig:orbit1}
 \caption{$alpha=0.21195$,$A=176400$}
  \end{minipage}
@@ -162,14 +168,12 @@ Next are specific trajectories of the 7 cases above.
  \begin{minipage}[t]{0.5\linewidth}
  \centering{}
  \includegraphics[width=7cm]{../Figures/orbit2.pdf}
- % \caption{spiralling inward($F_P\cdot\alpha>0$)}
  \label{fig:orbit2}
 \caption{$alpha=0.2198$,$A=176400$}
  \end{minipage}
  \begin{minipage}[t]{0.5\linewidth}
  \centering{}
  \includegraphics[width=7cm]{../Figures/orbit3.pdf}
- % \caption{spiralling outward($F_P\cdot\alpha<0$)}
  \label{fig:orbit3}
 \caption{$alpha=0.14915$,$A=193600$}
  \end{minipage}
@@ -178,14 +182,12 @@ Next are specific trajectories of the 7 cases above.
  \begin{minipage}[t]{0.5\linewidth}
  \centering{}
  \includegraphics[width=7cm]{../Figures/orbit4.pdf}
- % \caption{spiralling inward($F_P\cdot\alpha>0$)}
  \label{fig:orbit4}
 \caption{$alpha=0.1099$,$A=211600$}
  \end{minipage}
  \begin{minipage}[t]{0.5\linewidth}
  \centering{}
  \includegraphics[width=7cm]{../Figures/orbit5.pdf}
- % \caption{spiralling outward($F_P\cdot\alpha<0$)}
  \label{fig:orbit5}
 \caption{$alpha=0.1256$,$A=211600$}
  \end{minipage}
@@ -194,7 +196,6 @@ Next are specific trajectories of the 7 cases above.
  \begin{minipage}[t]{0.5\linewidth}
  \centering{}
  \includegraphics[width=7cm]{../Figures/orbit6.pdf}
- % \caption{spiralling inward($F_P\cdot\alpha>0$)}
  \label{fig:orbit6}
 \caption{$alpha=0.0658$,$A=230400$}
  \end{minipage}

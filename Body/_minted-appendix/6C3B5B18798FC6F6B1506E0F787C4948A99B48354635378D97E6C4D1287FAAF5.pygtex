@@ -1,0 +1,137 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{k}{function}\PYG{+w}{ }[Jugement1 , Jugement2]\PYG{p}{=}\PYG{n+nf}{orbit}\PYG{p}{(}angle\PYGZus{}of\PYGZus{}gesture,area\PYGZus{}of\PYGZus{}sail\PYG{p}{)}
+
+\PYG{k}{global} \PYG{n}{alpha}\PYG{p}{;} \PYG{c}{\PYGZpc{} Coefficient of light pressure}
+\PYG{k}{global} \PYG{n}{Area}\PYG{p}{;} \PYG{c}{\PYGZpc{} Area of solar sail}
+
+\PYG{n}{alpha} \PYG{p}{=} \PYG{n}{angle\PYGZus{}of\PYGZus{}gesture}\PYG{p}{;}
+\PYG{n}{Area} \PYG{p}{=} \PYG{n}{area\PYGZus{}of\PYGZus{}sail}\PYG{p}{;}
+
+\PYG{n}{format} \PYG{n}{long} \PYG{n}{g}\PYG{p}{;}
+\PYG{c}{\PYGZpc{} \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}Constants\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{n}{RM}\PYG{p}{=}\PYG{l+m+mf}{2.2794}\PYG{o}{*}\PYG{l+m+mi}{10}\PYGZca{}\PYG{l+m+mi}{11}\PYG{p}{;} \PYG{c}{\PYGZpc{} \PYGZlt{}\PYGZhy{}\PYGZhy{} The distance from Mars to the sun}
+\PYG{n}{RE}\PYG{p}{=}\PYG{l+m+mf}{1.496}\PYG{o}{*}\PYG{l+m+mi}{10}\PYGZca{}\PYG{l+m+mi}{11}\PYG{p}{;} \PYG{c}{\PYGZpc{} \PYGZlt{}\PYGZhy{}\PYGZhy{} The distance from Mars to the sun}
+\PYG{n}{Rs}\PYG{p}{=}\PYG{l+m+mf}{14.96}\PYG{o}{*}\PYG{l+m+mi}{10}\PYGZca{}\PYG{l+m+mi}{9}\PYG{p}{;} \PYG{c}{\PYGZpc{} \PYGZlt{}\PYGZhy{}\PYGZhy{} The radius of the sun after exaggeration}
+\PYG{n}{Rm} \PYG{p}{=} \PYG{l+m+mf}{3.397} \PYG{o}{*} \PYG{l+m+mi}{10}\PYGZca{}\PYG{l+m+mi}{6}\PYG{p}{;} \PYG{c}{\PYGZpc{} \PYGZlt{}\PYGZhy{}\PYGZhy{} The radius of Mars}
+\PYG{n}{TM} \PYG{p}{=} \PYG{l+m+mi}{687}\PYG{o}{*}\PYG{l+m+mi}{24}\PYG{o}{*}\PYG{l+m+mi}{3600}\PYG{p}{;} \PYG{c}{\PYGZpc{} \PYGZlt{}\PYGZhy{}\PYGZhy{}  Period of revolution of Mars}
+\PYG{n}{V\PYGZus{}Mars} \PYG{p}{=} \PYG{l+m+mi}{24130}\PYG{p}{;} \PYG{c}{\PYGZpc{} \PYGZlt{}\PYGZhy{}\PYGZhy{} The speed of Mars revolution}
+
+\PYG{n}{tend} \PYG{p}{=} \PYG{l+m+mi}{100000000}\PYG{p}{;} \PYG{c}{\PYGZpc{} \PYGZlt{}\PYGZhy{}\PYGZhy{} An enough time given}
+\PYG{n}{ts} \PYG{p}{=} \PYG{p}{[} \PYG{l+m+mi}{0} \PYG{p}{,} \PYG{n}{tend} \PYG{p}{]}\PYG{p}{;} \PYG{c}{\PYGZpc{} \PYGZlt{}\PYGZhy{}\PYGZhy{} Set the performance period}
+
+\PYG{c}{\PYGZpc{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}Initial Conditions\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{n}{beta\PYGZus{}start} \PYG{p}{=} \PYG{n+nb}{pi} \PYG{o}{/} \PYG{l+m+mi}{2}\PYG{p}{;}
+\PYG{n}{VX0} \PYG{p}{=} \PYG{l+m+mi}{29783} \PYG{o}{*} \PYG{n+nb}{cos}\PYG{p}{(}\PYG{n}{beta\PYGZus{}start}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{VY0} \PYG{p}{=} \PYG{l+m+mi}{29783} \PYG{o}{*} \PYG{n+nb}{sin}\PYG{p}{(}\PYG{n}{beta\PYGZus{}start}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{y0} \PYG{p}{=} \PYG{p}{[} \PYG{l+m+mf}{1.496}\PYG{o}{*}\PYG{n}{power}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{l+m+mi}{11}\PYG{p}{)} \PYG{p}{,} \PYG{l+m+mi}{0} \PYG{p}{,} \PYG{n}{VX0} \PYG{p}{,} \PYG{n}{VY0} \PYG{p}{]}\PYG{p}{;}
+
+\PYG{c}{\PYGZpc{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}Solve differential equations\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{p}{[}\PYG{n}{t}\PYG{p}{,}\PYG{n}{y}\PYG{p}{]} \PYG{p}{=} \PYG{n}{ode45}\PYG{p}{(} \PYG{p}{@}\PYG{n}{weifen} \PYG{p}{,} \PYG{n}{ts} \PYG{p}{,} \PYG{n}{y0} \PYG{p}{,} \PYG{l+m+mi}{10} \PYG{p}{)}\PYG{p}{;} \PYG{c}{\PYGZpc{} equation with light pressure}
+\PYG{p}{[}\PYG{n}{t1}\PYG{p}{,}\PYG{n}{y1}\PYG{p}{]} \PYG{p}{=} \PYG{n}{ode45}\PYG{p}{(} \PYG{p}{@}\PYG{n}{weifen1} \PYG{p}{,} \PYG{n}{ts} \PYG{p}{,} \PYG{n}{y0} \PYG{p}{,} \PYG{l+m+mi}{10} \PYG{p}{)}\PYG{p}{;} \PYG{c}{\PYGZpc{} equation without light pressure}
+
+\PYG{c}{\PYGZpc{} subplot( 2 , 2 , 1 );}
+\PYG{c}{\PYGZpc{} plot( t , y(:,1) , \PYGZsq{}o\PYGZsq{} );}
+\PYG{c}{\PYGZpc{} title( \PYGZsq{}x\PYGZsq{} );}
+\PYG{c}{\PYGZpc{} subplot( 2 , 2 , 2 );}
+\PYG{c}{\PYGZpc{} plot( t , y(:,2) , \PYGZsq{}o\PYGZsq{} );}
+\PYG{c}{\PYGZpc{} title( \PYGZsq{}Vitesse on x label\PYGZsq{} );}
+\PYG{c}{\PYGZpc{} subplot( 2 , 2 , 3 );}
+\PYG{c}{\PYGZpc{} plot( t , y(:,3) , \PYGZsq{}o\PYGZsq{} );}
+\PYG{c}{\PYGZpc{} title( \PYGZsq{}y\PYGZsq{} );}
+\PYG{c}{\PYGZpc{} subplot( 2 , 2 , 4 );}
+\PYG{c}{\PYGZpc{} plot( t , y(:,4) , \PYGZsq{}o\PYGZsq{} );}
+\PYG{c}{\PYGZpc{} title( \PYGZsq{}Vitesse on y label\PYGZsq{} );}
+
+\PYG{c}{\PYGZpc{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}Plot the orbits\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{n}{plot}\PYG{p}{(} \PYG{n}{y1}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{,} \PYG{n}{y1}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{)} \PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{o\PYGZsq{}} \PYG{p}{,} \PYG{n}{y1}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{,} \PYG{n}{y1}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{)} \PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{\PYGZhy{}\PYGZsq{}} \PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{color\PYGZsq{}}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{m\PYGZsq{}} \PYG{p}{)}\PYG{p}{;}
+\PYG{n}{hold} \PYG{n}{on}\PYG{p}{;}
+\PYG{n}{g1} \PYG{p}{=} \PYG{n}{plot}\PYG{p}{(} \PYG{n}{y1}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{,} \PYG{n}{y1}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{)} \PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{.\PYGZsq{}} \PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{color\PYGZsq{}}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{m\PYGZsq{}}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{MarkerSize\PYGZsq{}}\PYG{p}{,}\PYG{l+m+mi}{20} \PYG{p}{)}\PYG{p}{;}
+\PYG{n}{hold} \PYG{n}{on}\PYG{p}{;}
+\PYG{n}{plot}\PYG{p}{(} \PYG{n}{y}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{,} \PYG{n}{y}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{)} \PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{o\PYGZsq{}} \PYG{p}{,} \PYG{n}{y}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{,} \PYG{n}{y}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{)} \PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{\PYGZhy{}\PYGZsq{}} \PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{color\PYGZsq{}} \PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{g\PYGZsq{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{g2} \PYG{p}{=} \PYG{n}{plot}\PYG{p}{(} \PYG{n}{y}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{,} \PYG{n}{y}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{)} \PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{o\PYGZsq{}} \PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{color\PYGZsq{}} \PYG{p}{,} \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{g\PYGZsq{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{hold} \PYG{n}{on}\PYG{p}{;}
+
+\PYG{c}{\PYGZpc{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}Obtain Time to get to Mars orbit\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{n}{Temp} \PYG{p}{=} \PYG{l+m+mi}{1} \PYG{p}{:} \PYG{n+nb}{length}\PYG{p}{(} \PYG{n}{y}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{)}\PYG{p}{;}
+\PYG{k}{for} \PYG{n}{k} \PYG{p}{=} \PYG{l+m+mi}{1} \PYG{p}{:} \PYG{n+nb}{length}\PYG{p}{(} \PYG{n}{y}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{)}
+    \PYG{n}{Temp}\PYG{p}{(}\PYG{n}{k}\PYG{p}{)} \PYG{p}{=} \PYG{n}{RM}\PYG{p}{;}
+\PYG{k}{end}
+\PYG{c}{\PYGZpc{} Consider the distance captured by the gravity of Mars}
+ \PYG{k}{for} \PYG{n+nb}{i} \PYG{p}{=} \PYG{l+m+mi}{1} \PYG{p}{:} \PYG{n+nb}{length}\PYG{p}{(} \PYG{n}{y}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{)}
+     \PYG{k}{if} \PYG{n+nb}{abs}\PYG{p}{(} \PYG{n}{y}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{)}\PYGZca{}\PYG{l+m+mi}{2} \PYG{o}{+} \PYG{n}{y}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{)}\PYGZca{}\PYG{l+m+mi}{2} \PYG{o}{\PYGZhy{}} \PYG{n}{RM}\PYGZca{}\PYG{l+m+mi}{2} \PYG{p}{)} \PYG{o}{\PYGZlt{}} \PYG{p}{(}\PYG{l+m+mi}{5}\PYG{o}{*}\PYG{n}{power}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{l+m+mi}{7}\PYG{p}{)}\PYG{p}{)}
+         \PYG{n}{b} \PYG{p}{=} \PYG{n+nb}{i}\PYG{p}{;}
+         \PYG{k}{break}
+     \PYG{k}{else}
+         \PYG{p}{[}\PYG{n}{a} \PYG{p}{,} \PYG{n}{b}\PYG{p}{]} \PYG{p}{=} \PYG{n}{min}\PYG{p}{(} \PYG{n+nb}{abs}\PYG{p}{(} \PYG{n}{power}\PYG{p}{(} \PYG{n}{y}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{o}{\PYGZsq{}} \PYG{p}{,} \PYG{l+m+mi}{2} \PYG{p}{)} \PYG{o}{+} \PYG{n}{power}\PYG{p}{(} \PYG{n}{y}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{)}\PYG{o}{\PYGZsq{}} \PYG{p}{,} \PYG{l+m+mi}{2} \PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{n}{power}\PYG{p}{(} \PYG{n}{Temp} \PYG{p}{,} \PYG{l+m+mi}{2} \PYG{p}{)} \PYG{p}{)} \PYG{p}{)}\PYG{p}{;}
+     \PYG{k}{end}
+ \PYG{k}{end}
+ \PYG{n}{tarrive} \PYG{p}{=} \PYG{n}{t}\PYG{p}{(}\PYG{n}{b}\PYG{p}{)}\PYG{p}{;}
+ \PYG{n}{tarrive} \PYG{o}{/} \PYG{l+m+mi}{86400}
+
+\PYG{c}{\PYGZpc{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}Obtain Velocity get to Mars orbit\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{n}{Varrive} \PYG{p}{=} \PYG{n+nb}{sqrt}\PYG{p}{(} \PYG{n}{y}\PYG{p}{(}\PYG{n}{b}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{)}\PYGZca{}\PYG{l+m+mi}{2} \PYG{o}{+} \PYG{n}{y}\PYG{p}{(}\PYG{n}{b}\PYG{p}{,}\PYG{l+m+mi}{4}\PYG{p}{)}\PYGZca{}\PYG{l+m+mi}{2} \PYG{p}{)}\PYG{p}{;}
+
+\PYG{c}{\PYGZpc{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}Obtain Position get to Mars orbit\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{n}{Xarrive} \PYG{p}{=} \PYG{n}{y}\PYG{p}{(} \PYG{n}{b} \PYG{p}{,} \PYG{l+m+mi}{1} \PYG{p}{)}\PYG{p}{;}
+\PYG{n}{Yarrive} \PYG{p}{=} \PYG{n}{y}\PYG{p}{(} \PYG{n}{b} \PYG{p}{,} \PYG{l+m+mi}{3} \PYG{p}{)}\PYG{p}{;}
+
+
+\PYG{c}{\PYGZpc{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}Jugements: if the arrived point satisfy 2 conditions,}
+\PYG{c}{\PYGZpc{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}one is relative velocity, another is the relative}
+\PYG{c}{\PYGZpc{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}position between aircraft and Mars}
+
+\PYG{c}{\PYGZpc{} 1st: Velocity jugement}
+\PYG{k}{if} \PYG{n+nb}{abs}\PYG{p}{(} \PYG{n}{V\PYGZus{}Mars} \PYG{o}{\PYGZhy{}} \PYG{n}{Varrive} \PYG{p}{)} \PYG{o}{\PYGZlt{}}\PYG{p}{=} \PYG{l+m+mi}{9000}
+    \PYG{n}{Jugement1} \PYG{p}{=} \PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{k}{else}
+    \PYG{n}{Jugement1} \PYG{p}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{k}{end}
+
+\PYG{c}{\PYGZpc{} 2nd: Position jugement}
+\PYG{n}{posi\PYGZus{}x\PYGZus{}mars} \PYG{p}{=} \PYG{n}{RM} \PYG{o}{*} \PYG{n+nb}{cos}\PYG{p}{(} \PYG{n}{tarrive} \PYG{o}{/} \PYG{n}{TM} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{*} \PYG{n+nb}{pi} \PYG{p}{)}\PYG{p}{;}
+\PYG{n}{posi\PYGZus{}y\PYGZus{}mars} \PYG{p}{=} \PYG{n}{RM} \PYG{o}{*} \PYG{n+nb}{sin}\PYG{p}{(} \PYG{n}{tarrive} \PYG{o}{/} \PYG{n}{TM} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{*} \PYG{n+nb}{pi} \PYG{p}{)}\PYG{p}{;}
+\PYG{k}{if} \PYG{n+nb}{sqrt}\PYG{p}{(} \PYG{p}{(}\PYG{n}{Xarrive} \PYG{o}{\PYGZhy{}} \PYG{n}{posi\PYGZus{}x\PYGZus{}mars}\PYG{p}{)}\PYGZca{}\PYG{l+m+mi}{2} \PYG{o}{+} \PYG{p}{(}\PYG{n}{Yarrive} \PYG{o}{\PYGZhy{}} \PYG{n}{posi\PYGZus{}y\PYGZus{}mars}\PYG{p}{)}\PYGZca{}\PYG{l+m+mi}{2} \PYG{p}{)} \PYG{o}{\PYGZlt{}}\PYG{p}{=} \PYG{p}{(}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{power}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{l+m+mi}{10}\PYG{p}{)}\PYG{p}{)}
+    \PYG{n}{Jugement2} \PYG{p}{=} \PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{k}{else}
+    \PYG{n}{Jugement2} \PYG{p}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{k}{end}
+
+\PYG{c}{\PYGZpc{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}Plot orbits of Mars\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{n}{alpha\PYGZus{}}\PYG{p}{=}\PYG{l+m+mi}{0}\PYG{p}{:}\PYG{n+nb}{pi}\PYG{o}{/}\PYG{l+m+mi}{20}\PYG{p}{:}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n+nb}{pi}\PYG{p}{;}
+\PYG{n}{xm} \PYG{p}{=} \PYG{n}{RM} \PYG{o}{*} \PYG{n+nb}{cos}\PYG{p}{(}\PYG{n}{alpha\PYGZus{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{ym} \PYG{p}{=} \PYG{n}{RM} \PYG{o}{*} \PYG{n+nb}{sin}\PYG{p}{(}\PYG{n}{alpha\PYGZus{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{h2} \PYG{p}{=} \PYG{n}{plot}\PYG{p}{(}\PYG{n}{xm}\PYG{p}{,}\PYG{n}{ym}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{\PYGZhy{}\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{Linewidth\PYGZsq{}}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{hold} \PYG{n}{on}\PYG{p}{;}
+
+\PYG{c}{\PYGZpc{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}Plot orbits of Earth\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{n}{xe} \PYG{p}{=} \PYG{n}{RE} \PYG{o}{*} \PYG{n+nb}{cos}\PYG{p}{(}\PYG{n}{alpha\PYGZus{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{ye} \PYG{p}{=} \PYG{n}{RE} \PYG{o}{*} \PYG{n+nb}{sin}\PYG{p}{(}\PYG{n}{alpha\PYGZus{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{h3} \PYG{p}{=} \PYG{n}{plot}\PYG{p}{(}\PYG{n}{xe}\PYG{p}{,}\PYG{n}{ye}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{\PYGZhy{}\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{Linewidth\PYGZsq{}}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{hold} \PYG{n}{on}\PYG{p}{;}
+
+\PYG{c}{\PYGZpc{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}Plot sun\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{n}{xs} \PYG{p}{=} \PYG{n}{Rs} \PYG{o}{*} \PYG{n+nb}{cos}\PYG{p}{(}\PYG{n}{alpha\PYGZus{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{ys} \PYG{p}{=} \PYG{n}{Rs} \PYG{o}{*} \PYG{n+nb}{sin}\PYG{p}{(}\PYG{n}{alpha\PYGZus{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{plot}\PYG{p}{(}\PYG{n}{xs}\PYG{p}{,}\PYG{n}{ys}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{r\PYGZhy{}\PYGZsq{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{fill}\PYG{p}{(}\PYG{n}{xs}\PYG{p}{,}\PYG{n}{ys}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{r\PYGZsq{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{hold} \PYG{n}{on}\PYG{p}{;}
+
+\PYG{c}{\PYGZpc{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}Plot mars when aircraft get to Mars\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{n}{xmend} \PYG{p}{=} \PYG{n}{posi\PYGZus{}x\PYGZus{}mars} \PYG{o}{+} \PYG{n}{Rs}\PYG{o}{/}\PYG{l+m+mi}{2} \PYG{o}{*} \PYG{n+nb}{cos}\PYG{p}{(}\PYG{n}{alpha\PYGZus{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{ymend} \PYG{p}{=} \PYG{n}{posi\PYGZus{}y\PYGZus{}mars} \PYG{o}{+} \PYG{n}{Rs}\PYG{o}{/}\PYG{l+m+mi}{2} \PYG{o}{*} \PYG{n+nb}{sin}\PYG{p}{(}\PYG{n}{alpha\PYGZus{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{plot}\PYG{p}{(} \PYG{n}{xmend} \PYG{p}{,} \PYG{n}{ymend} \PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{b\PYGZhy{}\PYGZsq{}} \PYG{p}{)}\PYG{p}{;}
+\PYG{n}{h4} \PYG{p}{=} \PYG{n}{fill}\PYG{p}{(} \PYG{n}{xmend} \PYG{p}{,} \PYG{n}{ymend} \PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{b\PYGZhy{}\PYGZsq{}} \PYG{p}{)}\PYG{p}{;}
+\PYG{n}{hold} \PYG{n}{on}\PYG{p}{;}
+
+\PYG{c}{\PYGZpc{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}Plot position of aircraft get to Mars\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{n}{xaend} \PYG{p}{=} \PYG{n}{Xarrive} \PYG{o}{+} \PYG{n}{Rs}\PYG{o}{/}\PYG{l+m+mi}{3} \PYG{o}{*} \PYG{n+nb}{cos}\PYG{p}{(}\PYG{n}{alpha\PYGZus{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{yaend} \PYG{p}{=} \PYG{n}{Yarrive} \PYG{o}{+} \PYG{n}{Rs}\PYG{o}{/}\PYG{l+m+mi}{3} \PYG{o}{*} \PYG{n+nb}{sin}\PYG{p}{(}\PYG{n}{alpha\PYGZus{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{plot}\PYG{p}{(} \PYG{n}{xaend} \PYG{p}{,} \PYG{n}{yaend} \PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{b\PYGZhy{}\PYGZsq{}} \PYG{p}{)}\PYG{p}{;}
+\PYG{n}{h5} \PYG{p}{=} \PYG{n}{fill}\PYG{p}{(} \PYG{n}{xaend} \PYG{p}{,} \PYG{n}{yaend} \PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{y\PYGZhy{}\PYGZsq{}} \PYG{p}{)}\PYG{p}{;}
+
+\PYG{n}{legend}\PYG{p}{(}\PYG{p}{[}\PYG{n}{g1} \PYG{p}{,} \PYG{n}{g2} \PYG{p}{,} \PYG{n}{h2} \PYG{p}{,} \PYG{n}{h3}\PYG{p}{,} \PYG{n}{h4} \PYG{p}{,}\PYG{n}{h5}\PYG{p}{]}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{Orbit of aircraft without light pressure\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{Orbit of aircraft with light pressure\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{Orbit of Mars\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{Orbit of Earth\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{Position of Mars when aircraft get to Mars\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{Position of aircraft when get to Mars\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{Location\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{NorthOutside\PYGZsq{}}\PYG{p}{)}\PYG{p}{;}
+
+\PYG{n}{axis} \PYG{n}{equal}
+
+\PYG{k}{end}
+\end{Verbatim}

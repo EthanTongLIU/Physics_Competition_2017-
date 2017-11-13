@@ -1,13 +1,4 @@
 \documentclass[../Paper.tex]{subfiles}
-\usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage{subfigure}
-\usepackage{float}
-\makeatletter % `@' now normal "letter"
-\@addtoreset{equation}{section}
-\makeatother  % `@' is restored as "non-letter"
-\renewcommand\theequation{\oldstylenums{\thesection}%
-                    .\oldstylenums{\arabic{equation}}}
 
 \begin{document}
 
@@ -65,7 +56,7 @@ We can analyse the force state of a solar sail spacecraft as usual to get its ki
 
 \subsection{Basic model of the solar sail}
 
-In this paper, the rigid body hypothesis is used in the modeling of attitude dynamics of solar sail spacecraft (Fighre 1). The solar sail surface is a square geometry, with one control blades at each end of the four support rods. The payload is connected with the surface center of solar sail through a control rod with universal joint.
+In this paper, the rigid body hypothesis is used in the modeling of attitude dynamics of solar sail spacecraft (Figure 1). The solar sail surface is a square geometry, with one control blades at each end of the four support rods. The payload is connected with the surface center of solar sail through a control rod with universal joint.
 
 The simplified solar sail configuration is shown in Figure 2. The simplified configuration regards the solar sail surface as a square plane with an area A, and the center of mass coincides with its geometric center, which is located at the position of the gimbal. The attitude angle $\alpha$ of the solar sail is defined as the angle between the normal direction of the sail and the radial direction of the Sun, with a value of $-\dfrac{\pi}{2}\leq\alpha\leq\dfrac{\pi}{2}$. 
 
@@ -155,9 +146,18 @@ We calculated the gravitation from the Sun, Earth, Mars when the spacecraft has 
 %------------------太阳地球火星对航天器的引力关于r的变化相对大小 图----------------------%
 
 \begin{figure}[H]
- \centering
- \includegraphics[scale=0.3]{../Figures/1.pdf}
- \caption{...}
+ \begin{minipage}[t]{0.5\linewidth}
+ \centering{}
+ \includegraphics[width=7cm]{../Figures/gravmars.pdf}
+ \label{fig:orbitlegend}
+ \caption{Gravity of Mars}
+ \end{minipage}
+ \begin{minipage}[t]{0.5\linewidth}
+ \centering{}
+ \includegraphics[width=7cm]{../Figures/gravsun.pdf}
+ \label{fig:orbit1}
+\caption{Gravity of Sun} 
+ \end{minipage}
 \end{figure}
 
 \subsection{Force analysis and expression of acceleration}
@@ -235,13 +235,16 @@ so the normal should be:
 
 Then we project this two force to the axe x and axe y:
 \begin{equation}
-\vec{F_x} = (-\frac{GMmx}{(\sqrt{x^2+y^2})^3} + P(r)Acos^2\alpha(cos\alpha\frac{x}{\sqrt{x^2+y^2}} - sin\alpha\frac{y}{\sqrt{x^2+y^2}}))\vec{u_x}
+\vec{F_x} = (-\frac{GMmx}{(\sqrt{x^2+y^2})^3} + \dfrac{C_{1} A cos^2 \alpha}{\sqrt{x^2+y^2}} (cos\alpha\frac{x}{\sqrt{x^2+y^2}} - sin\alpha\frac{y}{\sqrt{x^2+y^2}}))\vec{u_x}
+\label{eq:diffx}
 \end{equation}
 
 \begin{equation}
-\vec{F_y} = (-\frac{GMmy}{(\sqrt{x^2+y^2})^3} + P(r)Acos^2\alpha(cos\alpha\frac{y}{\sqrt{x^2+y^2}} + sin\alpha\frac{x}{\sqrt{x^2+y^2}}))\vec{u_y}
+\vec{F_y} = (-\frac{GMmy}{(\sqrt{x^2+y^2})^3} + \dfrac{C_{1} A cos^2 \alpha}{\sqrt{x^2+y^2}} (cos\alpha\frac{y}{\sqrt{x^2+y^2}} + sin\alpha\frac{x}{\sqrt{x^2+y^2}}))\vec{u_y}
+\label{eq:diffy}
 \end{equation}
-\\
+
+Where $C_1 = 2.04 \times 10^11 $ is a coefficient about light pressure.
 
 According to the basic principle of dynamics, we can get these kinematical equation:
 
@@ -286,10 +289,24 @@ In this section we have got some trajectories of the spacecraft by setting the v
 %在这一部分，通过设置不同的太阳帆表面积和姿态角，得到了一些航天器的轨迹曲线，从图中可以看出从地球向火星或者说外星系发射太阳帆航天器，姿态角必须是正角，也就是在4.4部分所说的加速情况，而向内星系比如说水星，就是另外一种情况（姿态角为负数的情况）。我们想改变太阳帆表面积及姿态角让航天器能够到达火星轨道，试验的结果证明：在一定的条件下，航天器的轨迹可以到达火星轨道，也就是说，通过太阳帆将仪器设备或者其他载荷送到火星绝对是可行的。
 
 \begin{figure}[H]
- \centering
- \includegraphics[scale=0.3]{../Figures/1.pdf}
- \caption{...}
+\centering
+\includegraphics[width=8cm]{../Figures/label_of_7_orbits.pdf}
+\caption{Legend of Lines and Points in figures below}
 \end{figure}
 
+\begin{figure}[H]
+ \begin{minipage}[t]{0.5\linewidth}
+ \centering{}
+ \includegraphics[width=7cm]{../Figures/alphadayu0.pdf}
+ \label{fig:orbitlegend}
+ \caption{$\alpha > 0$}
+ \end{minipage}
+ \begin{minipage}[t]{0.5\linewidth}
+ \centering{}
+ \includegraphics[width=7cm]{../Figures/alphaxiaoyu0.pdf}
+ \label{fig:orbit1}
+\caption{$\alpha < 0$}
+ \end{minipage}
+\end{figure}
 
 \end{document}

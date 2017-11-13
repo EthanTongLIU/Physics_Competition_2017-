@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.30)  13 NOV 2017 06:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.30)  13 NOV 2017 07:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1258,10 +1258,6 @@ LaTeX Warning: Reference `eq:diffx' on page 1 undefined on input line 40.
 
 LaTeX Warning: Reference `eq:diffx' on page 1 undefined on input line 40.
 
-LaTeX Font Info:    Try loading font information for TS1+ppl on input line 47.
-(d:/texlive/2017/texmf-dist/tex/latex/psnfss/ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.64723pt.
@@ -1274,61 +1270,64 @@ nd DVIPDFMx (CTEX)
 ) [1
 
 ]
-Overfull \hbox (67.45032pt too wide) in paragraph at lines 69--75
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 55.
+
+(d:/texlive/2017/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)
+Overfull \hbox (67.45032pt too wide) in paragraph at lines 77--83
 \OML/zplm/m/it/10.53937 t[]$\OT1/ppl/m/n/10.53937 , at the end of this time, th
 e po-si-tion of Mars are $[]$,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-LaTeX Warning: Reference `eq:diffx' on page 2 undefined on input line 90.
+LaTeX Warning: Reference `eq:diffx' on page 2 undefined on input line 98.
 
 
-LaTeX Warning: Reference `eq:diffx' on page 2 undefined on input line 90.
+LaTeX Warning: Reference `eq:diffx' on page 2 undefined on input line 98.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--98
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
 
  []
 
 [2]
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.79843pt on input line 119.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.79843pt on input line 119.
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
+ []
+
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.79843pt on input line 127.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.79843pt on input line 127.
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <6.52437> not available
-(Font)              size <7> substituted on input line 119.
+(Font)              size <7> substituted on input line 127.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.52437> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 119.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 127.
 
-Overfull \hbox (13.44159pt too wide) in paragraph at lines 119--135
+Overfull \hbox (13.44159pt too wide) in paragraph at lines 127--143
  [][] 
  []
 
@@ -1336,18 +1335,18 @@ Overfull \hbox (13.44159pt too wide) in paragraph at lines 119--135
 File: ../Figures/label_of_7_orbits.pdf Graphic file (type pdf)
 
 <use ../Figures/label_of_7_orbits.pdf>
-Package pdftex.def Info: ../Figures/label_of_7_orbits.pdf used on input line 14
-8.
+Package pdftex.def Info: ../Figures/label_of_7_orbits.pdf used on input line 15
+6.
 (pdftex.def)             Requested size: 199.16928pt x 81.71431pt.
 
 <../Figures/orbit1.pdf, id=56, 456.6168pt x 389.60255pt>
 File: ../Figures/orbit1.pdf Graphic file (type pdf)
 
 <use ../Figures/orbit1.pdf>
-Package pdftex.def Info: ../Figures/orbit1.pdf used on input line 155.
+Package pdftex.def Info: ../Figures/orbit1.pdf used on input line 162.
 (pdftex.def)             Requested size: 199.16928pt x 169.93944pt.
 
-Overfull \hbox (2.0025pt too wide) in paragraph at lines 146--160
+Overfull \hbox (2.0025pt too wide) in paragraph at lines 154--166
 [][] [] 
  []
 
@@ -1355,67 +1354,74 @@ Overfull \hbox (2.0025pt too wide) in paragraph at lines 146--160
 File: ../Figures/orbit2.pdf Graphic file (type pdf)
 
 <use ../Figures/orbit2.pdf>
-Package pdftex.def Info: ../Figures/orbit2.pdf used on input line 164.
+Package pdftex.def Info: ../Figures/orbit2.pdf used on input line 170.
 (pdftex.def)             Requested size: 199.16928pt x 170.15729pt.
 
 <../Figures/orbit3.pdf, id=58, 454.64575pt x 387.63219pt>
 File: ../Figures/orbit3.pdf Graphic file (type pdf)
 
 <use ../Figures/orbit3.pdf>
-Package pdftex.def Info: ../Figures/orbit3.pdf used on input line 171.
+Package pdftex.def Info: ../Figures/orbit3.pdf used on input line 176.
 (pdftex.def)             Requested size: 199.16928pt x 169.81342pt.
 
-Overfull \hbox (2.0025pt too wide) in paragraph at lines 162--176
+Overfull \hbox (2.0025pt too wide) in paragraph at lines 168--180
 [][] [] 
  []
 
-<../Figures/orbit4.pdf, id=59, 469.73604pt x 390.35736pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+<../Figures/orbit4.pdf, id=64, 469.73604pt x 390.35736pt>
 File: ../Figures/orbit4.pdf Graphic file (type pdf)
 
 <use ../Figures/orbit4.pdf>
-Package pdftex.def Info: ../Figures/orbit4.pdf used on input line 180.
+Package pdftex.def Info: ../Figures/orbit4.pdf used on input line 184.
 (pdftex.def)             Requested size: 199.16928pt x 165.50954pt.
 
-<../Figures/orbit5.pdf, id=60, 462.26553pt x 388.48938pt>
+<../Figures/orbit5.pdf, id=65, 462.26553pt x 388.48938pt>
 File: ../Figures/orbit5.pdf Graphic file (type pdf)
 
 <use ../Figures/orbit5.pdf>
-Package pdftex.def Info: ../Figures/orbit5.pdf used on input line 187.
+Package pdftex.def Info: ../Figures/orbit5.pdf used on input line 190.
 (pdftex.def)             Requested size: 199.16928pt x 167.38506pt.
 
-Overfull \hbox (2.0025pt too wide) in paragraph at lines 178--192
+Overfull \hbox (2.0025pt too wide) in paragraph at lines 182--194
 [][] [] 
  []
 
-[3 <../Figures/label_of_7_orbits.pdf> <../Figures/orbit1.pdf>]
-<../Figures/orbit6.pdf, id=90, 452.01793pt x 392.23038pt>
+<../Figures/orbit6.pdf, id=66, 452.01793pt x 392.23038pt>
 File: ../Figures/orbit6.pdf Graphic file (type pdf)
 
 <use ../Figures/orbit6.pdf>
-Package pdftex.def Info: ../Figures/orbit6.pdf used on input line 196.
+Package pdftex.def Info: ../Figures/orbit6.pdf used on input line 198.
 (pdftex.def)             Requested size: 199.16928pt x 172.82129pt.
 
-<../Figures/orbit7.pdf, id=91, 470.41417pt x 389.60255pt>
+<../Figures/orbit7.pdf, id=67, 470.41417pt x 389.60255pt>
 File: ../Figures/orbit7.pdf Graphic file (type pdf)
 
 <use ../Figures/orbit7.pdf>
-Package pdftex.def Info: ../Figures/orbit7.pdf used on input line 203.
+Package pdftex.def Info: ../Figures/orbit7.pdf used on input line 204.
 (pdftex.def)             Requested size: 199.16928pt x 164.9517pt.
 
-Overfull \hbox (2.0025pt too wide) in paragraph at lines 194--208
+Overfull \hbox (2.0025pt too wide) in paragraph at lines 196--209
 [][] [] 
  []
 
 
-AED: lastpage setting LastPage
-[4 <../Figures/orbit2.pdf> <../Figures/orbit3.pdf> <../Figures/orbit4.pdf> <../
-Figures/orbit5.pdf> <../Figures/orbit6.pdf> <../Figures/orbit7.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 210.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 210.
+Underfull \vbox (badness 1173) has occurred while \output is active []
 
-(./sec5.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 210.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 210.
+ [4 <../Figures/label_of_7_orbits.pdf> <../Figures/orbit1.pdf> <../Figures/orbi
+t2.pdf> <../Figures/orbit3.pdf> <../Figures/orbit4.pdf> <../Figures/orbit5.pdf>
+]
+
+AED: lastpage setting LastPage
+[5 <../Figures/orbit6.pdf> <../Figures/orbit7.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 211.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 211.
+ (./sec5.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 211.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 211.
 Package rerunfilecheck Info: File `sec5.out' has not changed.
 (rerunfilecheck)             Checksum: 1B9DDD292722BFEBBEE05C1CAAEA9A96;1206.
 
@@ -1428,13 +1434,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 22313 strings out of 492995
- 370963 string characters out of 6136402
+ 22314 strings out of 492995
+ 370969 string characters out of 6136402
  645744 words of memory out of 5000000
  25473 multiletter control sequences out of 15000+600000
  36125 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,12n,47p,10457b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,12n,47p,10457b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}<d:/texlive/2017/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2017/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2017/texmf-dist/fonts/type1
@@ -1445,10 +1451,10 @@ xlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/texlive/2017/texm
 f-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/texlive/2017/texmf-dist/fonts/ty
 pe1/urw/palatino/uplri8a.pfb><d:/texlive/2017/texmf-dist/fonts/type1/urw/zapfdi
 ng/uzdr.pfb>
-Output written on sec5.pdf (4 pages, 351473 bytes).
+Output written on sec5.pdf (5 pages, 354046 bytes).
 PDF statistics:
- 210 PDF objects out of 1000 (max. 8388607)
- 160 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
+ 214 PDF objects out of 1000 (max. 8388607)
+ 163 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
  97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
