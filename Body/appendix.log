@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.30)  13 NOV 2017 06:33
 entering extended mode
  \write18 enabled.
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.16)  13 NOV 2017 07:02
+entering extended mode
+ restricted \write18 enabled.
+>>>>>>> bb23a93c301e11ec2ac1cba24dd30e782642402d
  %&-line parsing enabled.
 **./appendix.tex
 (./appendix.tex
@@ -1080,15 +1086,28 @@ LaTeX Info: Redefining \addtolength on input line 81.
 )
 (d:/texlive/2017/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+<<<<<<< HEAD
 Package shellesc Info: Unrestricted shell escape enabled on input line 67.
+=======
+Package shellesc Info: Restricted shell escape enabled on input line 69.
+>>>>>>> bb23a93c301e11ec2ac1cba24dd30e782642402d
 )
 (d:/texlive/2017/texmf-dist/tex/latex/ifplatform/ifplatform.sty
 Package: ifplatform 2010/10/22 v0.4 Testing for the operating system
 
 (d:/texlive/2017/texmf-dist/tex/generic/oberdiek/catchfile.sty
 Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
+<<<<<<< HEAD
 ))
 (d:/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+=======
+)
+
+Package ifplatform Warning: 
+    shell escape is disabled, so I can only detect \ifwindows.
+
+) (d:/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+>>>>>>> bb23a93c301e11ec2ac1cba24dd30e782642402d
 (d:/texlive/2017/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write4
 \integerpart=\count281
@@ -1112,6 +1131,7 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \@float@every@listing=\toks29
 \c@listing=\count285
 )
+<<<<<<< HEAD
 runsystem(if not exist _minted-appendix mkdir _minted-appendix)...executed.
 
 runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > ap
@@ -2245,3 +2265,41 @@ PDF statistics:
  10 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+=======
+runsystem(if not exist _minted-appendix mkdir _minted-appendix)...disabled (res
+tricted).
+
+
+
+! Package minted Error: You must invoke LaTeX with the -shell-escape flag.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \renewcommand
+                 {\theFancyVerbLine}{\sffamily
+Pass the -shell-escape flag to LaTeX. Refer to the minted.sty documentation for
+ more information.
+
+runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > ap
+pendix.aex <nul: /p x=^%~$PATH:i>> appendix.aex)...disabled (restricted).
+
+! Emergency stop.
+<read 4> 
+         
+l.10 \begin{document}
+                     ^^M
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 24033 strings out of 492995
+ 410334 string characters out of 6136402
+ 725069 words of memory out of 5000000
+ 27285 multiletter control sequences out of 15000+600000
+ 5551 words of font info for 21 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 49i,0n,47p,10499b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
+>>>>>>> bb23a93c301e11ec2ac1cba24dd30e782642402d

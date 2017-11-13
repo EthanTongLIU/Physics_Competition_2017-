@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.30)  13 NOV 2017 08:35
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.16)  13 NOV 2017 07:17
+>>>>>>> bb23a93c301e11ec2ac1cba24dd30e782642402d
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1585,6 +1589,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 File: UTF8.chr 2015/04/18 4.8.4
 ) (./Paper.aux
 
+<<<<<<< HEAD
 LaTeX Warning: Label `fig:orbitlegend' multiply defined.
 
 
@@ -1595,10 +1600,14 @@ LaTeX Warning: Label `fig:orbitlegend' multiply defined.
 
 
 LaTeX Warning: Label `fig:orbit1' multiply defined.
+=======
+LaTeX Warning: Label `fig1' multiply defined.
+>>>>>>> bb23a93c301e11ec2ac1cba24dd30e782642402d
 
 )
 \openout1 = `Paper.aux'.
 
+<<<<<<< HEAD
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
 LaTeX Font Info:    ... okay on input line 96.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 96.
@@ -1682,6 +1691,91 @@ LaTeX Font Info:    ... okay on input line 96.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 96.
 LaTeX Font Info:    ... okay on input line 96.
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 96.
+=======
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 90.
+>>>>>>> bb23a93c301e11ec2ac1cba24dd30e782642402d
  (d:/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
@@ -1778,10 +1872,26 @@ Package lastpage Info: Please have a look at the pageslts package at
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <16.06> not available
+<<<<<<< HEAD
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 105.
 LaTeX Font Info:    Try loading font information for OML+zplm on input line 107
 .
 (d:/texlive/2017/texmf-dist/tex/latex/psnfss/omlzplm.fd
+=======
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 99.
+(d:/texlive/2017/texmf-dist/tex/generic/ctex/zhwindowsfonts.tex
+File: zhwindowsfonts.tex 2017/04/01 v2.4.9 Windows font map loader for pdfTeX a
+nd DVIPDFMx (CTEX)
+) [1
+
+]
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 107.
+
+(./Paper.toc
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 6.
+ (d:/texlive/2017/texmf-dist/tex/latex/psnfss/omlzplm.fd
+>>>>>>> bb23a93c301e11ec2ac1cba24dd30e782642402d
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Try loading font information for OMS+zplm on input line 107
@@ -1836,6 +1946,7 @@ LaTeX Font Info:    Try loading font information for U+esint on input line 107.
 
 (d:/texlive/2017/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
+<<<<<<< HEAD
 )
 (d:/texlive/2017/texmf-dist/tex/generic/ctex/zhwindowsfonts.tex
 File: zhwindowsfonts.tex 2017/04/01 v2.4.9 Windows font map loader for pdfTeX a
@@ -1847,12 +1958,20 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 111.
 
 (./Paper.toc
+=======
+))
+\tf@toc=\write4
+\openout4 = `Paper.toc'.
+
+
+>>>>>>> bb23a93c301e11ec2ac1cba24dd30e782642402d
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
+<<<<<<< HEAD
 [2])
 \tf@toc=\write7
 \openout7 = `Paper.toc'.
@@ -3322,12 +3441,571 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  41i,13n,45p,10434b,772s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/Windows/fonts/sim
+=======
+[2] (./Body/sec1.tex
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 24--26
+
+ []
+
+) (./Body/sec2.tex
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \usepackage
+               {amsmath}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \usepackage
+               {graphicx}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \usepackage
+               {subfigure}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \usepackage
+               {float}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 20.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 20.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 20.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 20.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 20.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 20.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 62.
+
+[5] <Figures/../Figures/solarsailmodel.jpg, id=170, 1204.5pt x 796.9775pt>
+File: Figures/../Figures/solarsailmodel.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/solarsailmodel.jpg>
+Package pdftex.def Info: Figures/../Figures/solarsailmodel.jpg used on input li
+ne 74.
+(pdftex.def)             Requested size: 240.89574pt x 159.39267pt.
+
+<Figures/../Figures/imagesolarsail.jpg, id=171, 489.32813pt x 300.3722pt>
+File: Figures/../Figures/imagesolarsail.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/imagesolarsail.jpg>
+Package pdftex.def Info: Figures/../Figures/imagesolarsail.jpg used on input li
+ne 80.
+(pdftex.def)             Requested size: 244.66345pt x 150.18571pt.
+ [6 <./Figures/../Figures/solarsailmodel.jpg> <./Figures/../Figures/imagesolars
+ail.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
+
+ []
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 108.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 108.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+ []
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 113.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 113.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 118.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 118.
+
+<Figures/../Figures/lightpressure.pdf, id=178, 792.22476pt x 419.36389pt>
+File: Figures/../Figures/lightpressure.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/lightpressure.pdf>
+Package pdftex.def Info: Figures/../Figures/lightpressure.pdf used on input lin
+e 124.
+(pdftex.def)             Requested size: 237.66925pt x 125.81013pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 133.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 133.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 140.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 140.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 147.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 147.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <./Figures/../Figures/lightpressure.pdf>]
+<Figures/../Figures/1.pdf, id=204, 313.78249pt x 275.93889pt>
+File: Figures/../Figures/1.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/1.pdf>
+Package pdftex.def Info: Figures/../Figures/1.pdf used on input line 159.
+(pdftex.def)             Requested size: 94.13547pt x 82.78229pt.
+
+<Figures/../Figures/accelerate.pdf, id=205, 720.53714pt x 495.7572pt>
+File: Figures/../Figures/accelerate.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/accelerate.pdf>
+Package pdftex.def Info: Figures/../Figures/accelerate.pdf used on input line 1
+74.
+(pdftex.def)             Requested size: 180.13383pt x 123.939pt.
+
+<Figures/../Figures/decrease.pdf, id=206, 780.43523pt x 490.81418pt>
+File: Figures/../Figures/decrease.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/decrease.pdf>
+Package pdftex.def Info: Figures/../Figures/decrease.pdf used on input line 180
+.
+(pdftex.def)             Requested size: 195.10832pt x 122.70323pt.
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 172--184
+[][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./Figures/../Figures/1.pdf>]
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 192.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 192.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 198.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 198.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 204.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 204.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 212.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 212.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 217.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 217.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 222.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 222.
+
+
+Underfull \vbox (badness 1184) has occurred while \output is active []
+
+ [10 <./Figures/../Figures/accelerate.pdf> <./Figures/../Figures/decrease.pdf>]
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 227.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 227.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 240.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 240.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 245.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 245.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--247
+
+ []
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 252.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 252.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 255.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 255.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+File: Figures/../Figures/1.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/1.pdf>
+Package pdftex.def Info: Figures/../Figures/1.pdf used on input line 292.
+(pdftex.def)             Requested size: 94.13547pt x 82.78229pt.
+ [12]) (./Body/sec3.tex
+File: Figures/../Figures/1.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/1.pdf>
+Package pdftex.def Info: Figures/../Figures/1.pdf used on input line 12.
+(pdftex.def)             Requested size: 341.43306pt x 300.25374pt.
+) (./Body/sec4.tex) (./Body/sec5.tex
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 10.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 10.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 10.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 10.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+[14]
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 40.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 40.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 40.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 40.
+
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 47.
+(d:/texlive/2017/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+) [15]
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 90.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 90.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 90.
+
+
+Package textcomp Warning: Oldstyle digits unavailable for family ppl.
+(textcomp)                Lining digits used instead on input line 90.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--98
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+[16]
+Overfull \hbox (13.44159pt too wide) in paragraph at lines 119--135
+ [][] 
+ []
+
+<Figures/../Figures/label_of_7_orbits.pdf, id=305, 202.66615pt x 83.14563pt>
+File: Figures/../Figures/label_of_7_orbits.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/label_of_7_orbits.pdf>
+Package pdftex.def Info: Figures/../Figures/label_of_7_orbits.pdf used on input
+ line 148.
+(pdftex.def)             Requested size: 199.16928pt x 81.71431pt.
+
+<Figures/../Figures/orbit1.pdf, id=306, 456.6168pt x 389.60255pt>
+File: Figures/../Figures/orbit1.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/orbit1.pdf>
+Package pdftex.def Info: Figures/../Figures/orbit1.pdf used on input line 155.
+(pdftex.def)             Requested size: 199.16928pt x 169.93944pt.
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 146--160
+[][] [] 
+ []
+
+<Figures/../Figures/orbit2.pdf, id=307, 454.64192pt x 388.41713pt>
+File: Figures/../Figures/orbit2.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/orbit2.pdf>
+Package pdftex.def Info: Figures/../Figures/orbit2.pdf used on input line 164.
+(pdftex.def)             Requested size: 199.16928pt x 170.15729pt.
+
+<Figures/../Figures/orbit3.pdf, id=308, 454.64575pt x 387.63219pt>
+File: Figures/../Figures/orbit3.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/orbit3.pdf>
+Package pdftex.def Info: Figures/../Figures/orbit3.pdf used on input line 171.
+(pdftex.def)             Requested size: 199.16928pt x 169.81342pt.
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 162--176
+[][] [] 
+ []
+
+<Figures/../Figures/orbit4.pdf, id=309, 469.73604pt x 390.35736pt>
+File: Figures/../Figures/orbit4.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/orbit4.pdf>
+Package pdftex.def Info: Figures/../Figures/orbit4.pdf used on input line 180.
+(pdftex.def)             Requested size: 199.16928pt x 165.50954pt.
+
+<Figures/../Figures/orbit5.pdf, id=310, 462.26553pt x 388.48938pt>
+File: Figures/../Figures/orbit5.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/orbit5.pdf>
+Package pdftex.def Info: Figures/../Figures/orbit5.pdf used on input line 187.
+(pdftex.def)             Requested size: 199.16928pt x 167.38506pt.
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 178--192
+[][] [] 
+ []
+
+
+Underfull \vbox (badness 2158) has occurred while \output is active []
+
+ [17 <./Figures/../Figures/label_of_7_orbits.pdf> <./Figures/../Figures/orbit1.
+pdf>]
+<Figures/../Figures/orbit6.pdf, id=340, 452.01793pt x 392.23038pt>
+File: Figures/../Figures/orbit6.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/orbit6.pdf>
+Package pdftex.def Info: Figures/../Figures/orbit6.pdf used on input line 196.
+(pdftex.def)             Requested size: 199.16928pt x 172.82129pt.
+
+<Figures/../Figures/orbit7.pdf, id=341, 470.41417pt x 389.60255pt>
+File: Figures/../Figures/orbit7.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/orbit7.pdf>
+Package pdftex.def Info: Figures/../Figures/orbit7.pdf used on input line 203.
+(pdftex.def)             Requested size: 199.16928pt x 164.9517pt.
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 194--208
+[][] [] 
+ []
+
+) [18 <./Figures/../Figures/orbit2.pdf> <./Figures/../Figures/orbit3.pdf> <./Fi
+gures/../Figures/orbit4.pdf> <./Figures/../Figures/orbit5.pdf> <./Figures/../Fi
+gures/orbit6.pdf> <./Figures/../Figures/orbit7.pdf>] (./Body/reference.tex
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \usepackage
+               {CJK}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Font Info:    Try loading font information for C70+rm on input line 8.
+(d:/texlive/2017/texmf-dist/tex/latex/ctex/fd/c70rm.fd
+File: c70rm.fd 2017/04/01 v2.4.9 Chinese font definition (CTEX)
+)
+Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (
+quanjiao) on input line 9.
+
+Underfull \hbox (badness 5431) in paragraph at lines 12--13
+[]\C70/rm/m/n/12/5d ^^T \C70/rm/m/n/12/4e C \C70/rm/m/n/12/52 ^^Z\OT1/ppl/m/n/1
+2 ,\C70/rm/m/n/12/52 ^^X \C70/rm/m/n/12/5b ¶ \C70/rm/m/n/12/59 +\OT1/ppl/m/n/12
+ ,\C70/rm/m/n/12/83 c \C70/rm/m/n/12/60 ^^] \C70/rm/m/n/12/8f Ü\OT1/ppl/m/n/12 
+. \C70/rm/m/n/12/59 * \C70/rm/m/n/12/96 3 \C70/rm/m/n/12/5e ^^F \C70/rm/m/n/12/
+82 * \C70/rm/m/n/12/59 ) \C70/rm/m/n/12/56 h \C70/rm/m/n/12/52 ¨ › \C70/rm/m/n/
+12/5b f \C70/rm/m/n/12/5e ú \C70/rm/m/n/12/6a ! \C70/rm/m/n/12/4e ^^N \C70/rm/m
+/n/12/6c B \C70/rm/m/n/12/89 ã\OT1/ppl/m/n/12 [J]. \C70/rm/m/n/12/82 * \C70/rm/
+m/n/12/7a z \C70/rm/m/n/12/5b f
+ []
+
+) [19] 
+AED: lastpage setting LastPage
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
+(./Paper.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
+Package rerunfilecheck Info: File `Paper.out' has not changed.
+(rerunfilecheck)             Checksum: 6995B08E9BA4FA1D8BFAEF63997E5C13;4320.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 127.
+ ) 
+Here is how much of TeX's memory you used:
+ 23208 strings out of 492995
+ 381772 string characters out of 6136402
+ 528755 words of memory out of 5000000
+ 26135 multiletter control sequences out of 15000+600000
+ 57779 words of font info for 177 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,13n,45p,10434b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/s
+imsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows
+/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:
+/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun
+.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/font
+s/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Wind
+ows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc>
+<c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/sim
+>>>>>>> bb23a93c301e11ec2ac1cba24dd30e782642402d
 sun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/f
 onts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/W
 indows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.t
 tc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/
 simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Window
 s/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c
+<<<<<<< HEAD
 :/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsu
 n.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fon
 ts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Win
@@ -3360,4 +4038,22 @@ PDF statistics:
  703 compressed objects within 8 object streams
  111 named destinations out of 1000 (max. 500000)
  518 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc>{d:/texlive/2017/texmf-
+dist/fonts/enc/dvips/base/8r.enc}<d:/texlive/2017/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmex10.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
+.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/
+texlive/2017/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb><d:/texlive/2017
+/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/texlive/2017/texmf-dist/fon
+ts/type1/urw/palatino/uplr8a.pfb><d:/texlive/2017/texmf-dist/fonts/type1/urw/pa
+latino/uplr8a.pfb><d:/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.
+pfb><d:/texlive/2017/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on Paper.pdf (19 pages, 756297 bytes).
+PDF statistics:
+ 689 PDF objects out of 1000 (max. 8388607)
+ 525 compressed objects within 6 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 447 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> bb23a93c301e11ec2ac1cba24dd30e782642402d
 
